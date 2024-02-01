@@ -46,7 +46,6 @@ go.work
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
-
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
@@ -62,7 +61,8 @@ hugo.linux
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
