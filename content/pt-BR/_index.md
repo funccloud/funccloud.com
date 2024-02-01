@@ -38,7 +38,7 @@ feature:
   # feature item loop
   - name : "Visão sistêmica"
     icon : "fas fa-globe"
-    content : "Na FuncCloud acreditamos que a tecnologia só atinge seu valor máximo se estiver alinhada ao negócio."
+    content : "Estamos prontos para apoiar a sua empresa em toda a jornada de tecnologia."
     
   # feature item loop
   - name : "Suporte 24h"
@@ -46,46 +46,41 @@ feature:
     content : "Temos opções de suporte para sua necessidade. Desde atendimentos em horário comercial até atendimento 24h."
     
   # feature item loop
-  - name : "Respostas rápidas"
-    icon : "fas fa-thumbs-up"
-    content : "Nós levamos o seu tempo à sério! Realizamos o primeiro atendimento em até 10 minutos."   
+  - name : "Alinhada ao seu negócio"
+    icon : "fas fa-compass"
+    content : "Na FuncCloud acreditamos que a tecnologia só atinge seu valor máximo se estiver alinhada ao negócio."   
       
 ######################### Service #####################
 service:
   enable : true
   service_item:
   # service item loop
-  - title : "It is the most advanced digital marketing company."
+  - title : "Sua Jornada para Cloud com a FuncCloud"
     images:
-    - "images/service-1.png"
-    - "images/service-2.png"
-    - "images/service-3.png"
-    content : "Adipiscing elit Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    - "images/services/dt.jpg"
+    button:
+      enable : true
+      label : "Conheça mais"
+      link : "/sobre-nos"
+    content : "Uma transformação digital de sucesso vai além da migração de serviços para a nuvem. Ela tem que permitir que uma empresa crie vantagens competitivas ao acelerar seu processo de inovação, reduzir custos e aumentar a eficiência operacional. <br> Aqui na FuncCloud há mais de 5 anos transformamos nossos clientes usando uma combinação de serviços de consultoria com soluções avançadas de TI, adequadas a cada cliente. <br> Faça como nossos clientes que confiaram a sua jornada de transformação à FuncCloud."
       
   # service item loop
-  - title : "It is a privately owned Information and cyber security company"
+  - title : "Desenvolvendo equipes de alta performance"
     images:
-    - "images/service-1.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      
-  # service item loop
-  - title : "It’s a team of experienced and skilled people with distributions"
-    images:
-    - "images/service-2.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      
-  # service item loop
-  - title : "A company standing different from others"
-    images:
-    - "images/service-3.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    - "images/services/gcp.png"
+    - "images/services/maps.png"
+    - "images/services/workspace.png"
+    button:
+      enable : true
+      label : "Conheça nossos produtos e serviços"
+      link : "/produtos"
+    content : "Um dos maiores resultados de uma transformação digital de sucesso é o aumento da performance de toda a organização. Por isto, nossos serviços engajam toda a empresa, do TI à área comercial, cobrindo desde uma migração para o Google Workspace, até a implementação de soluções de Geolocalização e/ou de Machine Learning e Inteligência Artificial."
        
        
 ################### Testimonials ########################
 testimonials:
   enable: true
   title: "Depoimentos"
-  
   testimonials_quotes:
   - quote: "O trabalho de desenvolvimento da Funccloud foi fundamental para conquistarmos um grande cliente. Sempre atenciosos com nossas dúvidas, a equipe foi ágil na execução e comprometidos com nosso sucesso. Estamos muito satisfeitos com o trabalho."
     name: "Lucas Magrin"
