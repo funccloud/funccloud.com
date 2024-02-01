@@ -1,0 +1,80 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/logo.png"
+# use `px` or `x` with logo_width, example: "100px".
+# Note: logo_width is not work with .svg file
+logo_width = "200px"
+# if logo_webp set false, will not generate WEBP version of logo | default is true
+logo_webp = false
+# logo text will only show when logo is missing.
+logo_text = "FuncCloud"
+# theme-mode
+theme_switcher = false
+theme_default = "light" # available options [light/dark/system]
+# Main Sections
+mainSections = ["blog"]
+
+whatsapp_link = "https://api.whatsapp.com/send?phone=551152422261&text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+com+um+especialista."
+
+# google tag manager, see https://developers.google.com/tag-manager/
+google_tag_manager = "" # example: G-XXXXXXXXXX
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script = ""
+# copyright
+theme_copyright = true
+copyright = "FuncCloud Soluções Tecnológicas - CNPJ 26.458.236/0001-60 © 2024 | Todos os direitos reservados."
+footer_image = "images/gcp.png"
+
+# Preloader
+[preloader]
+enable = true
+preloader = "images/preloader.gif" # use jpg, png, svg or gif format. example - "images/preloader.gif"
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "FALE COM UM ESPECIALISTA"
+link = "/contato"
+
+# Crisp Chat
+[crisp_chat]
+enable = true
+crisp_website_id = "e2271d6d-d215-4a4b-8d0d-ab5c76201b36" # replace this code with yours
+# Check this video tutorial to get your crisp website ID - https://www.youtube.com/watch?v=nW5UX6iVdFc
+
+# seo meta data for OpenGraph / Twitter Card
+[metadata]
+keywords = ["Cloud Computing", "Cloud", "Google Cloud"]
+description = "Facilitamos a Inovação na Nuvem da sua empresa por meio de pessoas, processos e tecnologia."
+author = "FuncCloud"
+image = "images/logo.png"                                                                                   # this image will be used as fallback if a page has no image of its own
+
+
+# site verifications
+[site_verification]
+google = "" # Your verification code
+
+# cookies
+[cookies]
+enable = true
+expire_days = 2
+content = "Este site usa cookies. Ao continuar a usar este site, você concorda com seu uso."
+button = "EU ACEITO"
+
+############################# social site ########################
+[[social]]
+title = "linkedin"
+icon = "fab fa-linkedin"
+link = "https://linkedin.com/company/funccloud"
+
+[[social]]
+title = "instagram"
+icon = "fab fa-instagram"
+link = "https://www.instagram.com/funccloud/"
+
+[[social]]
+title = "github"
+icon = "fab fa-github"
+link = "https://github.com/funccloud"

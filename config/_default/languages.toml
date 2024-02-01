@@ -1,0 +1,11 @@
+################################### pt-BR language #####################################
+[pt-BR]
+languageName = "pt-BR"
+languageCode = "ept-BR"
+contentDir = "content/pt-BR"
+weight = 1
+[pt-BR.params]
+########### footer content ##########
+footer_menu_left = "Company"
+footer_menu_middle = "Products"
+footer_menu_right = "Support"

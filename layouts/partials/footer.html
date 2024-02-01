@@ -1,0 +1,76 @@
+<footer class=" section pb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-11">
+        <div class="section pt-0">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              {{ if site.Menus.footer_left }}
+              <div class="h5 mb-4">{{ site.Params.footer_menu_left }}</div>
+              <ul class="list-unstyled footer-list">
+                {{ range site.Menus.footer_left }}
+                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              {{ if site.Menus.footer_middle }}
+              <div class="h5 mb-4">{{ site.Params.footer_menu_middle }}</div>
+              <ul class="list-unstyled footer-list">
+                {{ range site.Menus.footer_middle }}
+                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              {{ if site.Menus.footer_right }}
+              <div class="h5 mb-4">{{ site.Params.footer_menu_right }}</div>
+              <ul class="list-unstyled footer-list">
+                {{ range site.Menus.footer_right }}
+                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <a class="d-block h5 mb-4" href="{{ site.BaseURL | absLangURL}}">
+                {{ partial "logo.html" }}
+              </a>
+              <p>
+                {{ partial "image" (dict "Src" site.Params.footer_image "Alt" "Google Cloud Partner" "Size" "200x") }}
+              </p>
+              {{ with site.Params.social }}
+              <ul class="list-inline social-icons">
+                {{ range . }}
+                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i
+                      class="{{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ if site.Params.theme_copyright }}
+        <div class="border-top border-default text-center py-4">
+          <small class="content"> {{site.Params.copyright}}</small>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</footer>
+{{ with site.Params.whatsapp_link }}
+<div class="whatsapp-container">
+  <a target="_blank" href="{{ . | safeURL }}">
+    <div class="whatsapp-icon-container">
+      <i class="wa-icon fab fa-whatsapp"></i>
+    </div>
+    <div class="wwhatsapp-text-container">
+      <a target="_blank" href="{{ . | safeURL }}" class="whatsapp-text">WhatsApp</a>
+    </div>
+  </a>
+</div>
+{{end}}
