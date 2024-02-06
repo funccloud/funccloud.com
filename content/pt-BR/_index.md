@@ -31,7 +31,7 @@ feature:
     link : "/certificacoes"
   feature_item:
   # feature item loop
-  - name : "rofissionais Experientes"
+  - name : "Profissionais Experientes"
     icon : "fas fa-user"
     content : "Aqui você conta com profissionais com experiência principais nuvens do mercado."
     
@@ -74,7 +74,7 @@ service:
       enable : true
       label : "Conheça nossos produtos e serviços"
       link : "/produtos"
-    content : "Um dos maiores resultados de uma transformação digital de sucesso é o aumento da performance de toda a organização. Por isto, nossos serviços engajam toda a empresa, do TI à área comercial, cobrindo desde uma migração para o Google Workspace, até a implementação de soluções de Geolocalização e/ou de Machine Learning e Inteligência Artificial."
+    content : "Um dos maiores resultados de uma transformação digital de sucesso é o aumento da performance de toda a organização. Por isto, nossos serviços engajam toda a empresa, da área de TI à área comercial, cobrindo desde uma migração para o Google Workspace, até a implementação de soluções de Geolocalização e/ou de Machine Learning e Inteligência Artificial."
        
        
 ################### Testimonials ########################
