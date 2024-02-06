@@ -1,43 +1,40 @@
 # main menu
 [[main]]
 name = "Home"
-url = ""
+url = "/"
 weight = 1
 
 [[main]]
 weight = 4
-name = "Company"
+name = "Institucional"
 hasChildren = true
+[main.params]
+isMenuLarge = true
 
 [[main]]
-parent = "Company"
-name = "About"
-url = "about/"
+parent = "Institucional"
+name = "Sobre nós"
+url = "/sobre-nos"
+pre = "<i class='dropdown-icon fas fa-home'></i>"
+post = "<small class='dropdown-subtitle'>Conheça a nossa história.</small>"
 weight = 1
 
 [[main]]
-parent = "Company"
-name = "Team"
-url = "team/"
-weight = 4
+parent = "Institucional"
+name = "Nossas certificações"
+url = "/certificacoes"
+pre = "<i class='dropdown-icon fas fa-medal'></i>"
+post = "<small class='dropdown-subtitle'>Veja nossas certificações</small>"
+weight = 2
 
 [[main]]
-parent = "Company"
-name = "How It Works"
-url = "how-it-works/"
-weight = 8
+parent = "Institucional"
+name = "Perfil de parceiro"
+url = "https://cloud.google.com/find-a-partner/partner/funccloud"
+pre = "<i class='dropdown-icon fas fa-tasks'></i>"
+post = "<small class='dropdown-subtitle'>Acesse nosso perfil de parceiro do Google</small>"
+weight = 3
 
-[[main]]
-parent = "Company"
-name = "Career"
-url = "career/"
-weight = 9
-
-[[main]]
-parent = "Company"
-name = "Career Details"
-url = "career/sr-executive-service-assurance/"
-weight = 10
 
 [[main]]
 weight = 6
@@ -168,24 +165,19 @@ weight = 30
 
 # footer menu left
 [[footer_left]]
-name = "About Us"
-url = "about/"
+name = "Sobre nós"
+url = "/sobre-nos"
 weight = 1
 
 [[footer_left]]
-name = "Team"
-url = "team/"
+name = "Nossas certificações"
+url = "/certificacoes"
 weight = 2
 
 [[footer_left]]
-name = "How It Works"
-url = "how-it-works/"
+name = "Perfil de parceiro do Google"
+url = "https://cloud.google.com/find-a-partner/partner/funccloud"
 weight = 3
-
-[[footer_left]]
-name = "Career"
-url = "career/"
-weight = 4
 
 
 # footer menu middle
