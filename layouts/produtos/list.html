@@ -1,30 +1,43 @@
-{{define "main"}}
-
-{{ partial "page-header.html" . }}
+{{define "main"}} {{ partial "page-header.html" . }}
 
 <section class="section">
-  <div class="container">
-    <div class="row gx-sm-5 gy-5 justify-content-center">
-    {{range where site.RegularPages "Section" .Params.section}}
-    <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-in">
-      <a href="{{.RelPermalink}}" class="d-block text-reset h-100">
-        <div class="card products-card is-hoverable h-100">
-          <div class="card-body p-5 pb-0">
-            {{with .Params.icon}}<span class="h3 d-inline-block mb-4"><i class="text-primary {{.}}"></i></span>{{end}}
-            <h3 class="h5">{{.Title | markdownify}}</h3>
-            <div class="mt-3">
-              <div class="content mb-4">{{.Params.description | truncate 70}}</div>
+    <div class="container">
+        <div class="row gx-sm-5 gy-5 justify-content-center">
+            {{range where site.RegularPages "Section" .Params.section}}
+            <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-in">
+                <a href="{{.RelPermalink}}" class="d-block text-reset h-100">
+                    <div class="card products-card is-hoverable h-100">
+                        <div class="card-body p-5 pb-0">
+                            {{$title := .Params.Title}} {{with
+                            .Params.icon}}<span class="h3 d-inline-block"
+                                ><i class="text-primary {{.}}"></i></span
+                            >{{end}} {{with .Params.image}}<span
+                                class="h3 d-inline-block"
+                                ><i
+                                    >{{ partial "image" (dict "Src" . "Alt"
+                                    $title "Size" "200p") }}</i
+                                ></span
+                            >{{end}}
+                            <div class="mt-3">
+                                <div class="content mb-4">
+                                    {{.Params.description | truncate 70}}
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card-footer border-0 bg-transparent p-5 pt-0"
+                        >
+                            <span class="text-primary fw-500"
+                                >Saiba mais
+                                <i class="fas fa-arrow-right small ms-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-          <div class="card-footer p-5 pt-0 border-0 bg-transparent">
-            <span class="text-primary fw-500">{{i18n `view_product`}} <i class="fas fa-arrow-right small ms-1"></i> </span>
-          </div>
+            {{end}}
         </div>
-      </a>
     </div>
-    {{end}}
-    </div>
-  </div>
 </section>
 
 {{end}}

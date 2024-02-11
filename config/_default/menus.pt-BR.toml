@@ -15,7 +15,7 @@ isMenuLarge = true
 parent = "Institucional"
 name = "Sobre nós"
 url = "/sobre-nos"
-pre = "<i class='dropdown-icon fas fa-home'></i>"
+pre = "<i class='dropdown-icon text-primary fas fa-home'></i>"
 post = "<small class='dropdown-subtitle'>Conheça a nossa história.</small>"
 weight = 1
 
@@ -23,140 +23,80 @@ weight = 1
 parent = "Institucional"
 name = "Nossas certificações"
 url = "/certificacoes"
-pre = "<i class='dropdown-icon fas fa-medal'></i>"
-post = "<small class='dropdown-subtitle'>Veja nossas certificações</small>"
+pre = "<i class='dropdown-icon text-primary fas fa-medal'></i>"
+post = "<small class='dropdown-subtitle'>Veja nossas certificações.</small>"
 weight = 2
 
 [[main]]
 parent = "Institucional"
 name = "Perfil de parceiro"
 url = "https://cloud.google.com/find-a-partner/partner/funccloud"
-pre = "<i class='dropdown-icon fas fa-tasks'></i>"
-post = "<small class='dropdown-subtitle'>Acesse nosso perfil de parceiro do Google</small>"
+pre = "<i class='dropdown-icon text-primary fas fa-tasks'></i>"
+post = "<small class='dropdown-subtitle'>Acesse nosso perfil de parceiro do Google.</small>"
 weight = 3
 
 
 [[main]]
 weight = 6
-name = "Products"
+name = "Produtos"
 hasChildren = true
 [main.params]
 isMenuLarge = true
 
 [[main]]
-parent = "Products"
-name = "CRM"
-pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>Convert leads and close sales deals faster.</small>"
-url = "products/product-1/"
+parent = "Produtos"
+name = "Google Workspace"
+pre = "<i class='dropdown-icon text-primary fas fa-calendar'></i>"
+post = "<small class='dropdown-subtitle'>Extraia o máximo do Google Workspace conosco.</small>"
+url = "/produtos/google-workspace"
 weight = 1
 
 [[main]]
-parent = "Products"
-name = "Help Desk"
-pre = "<i class='dropdown-icon fas fa-dice-d6'></i>"
-post = "<small class='dropdown-subtitle'>Software to deliver great customer support.</small>"
-url = "products/product-2/"
+parent = "Produtos"
+name = "Google Cloud Platform"
+pre = "<i class='dropdown-icon text-primary fas fa-cloud'></i>"
+post = "<small class='dropdown-subtitle'>Extraia o máximo do Google Cloud conosco.</small>"
+url = "/produtos/google-cloud"
 weight = 2
 
 [[main]]
-parent = "Products"
-name = "Workplace"
-pre = "<i class='dropdown-icon fas fa-laptop-house'></i>"
-post = "<small class='dropdown-subtitle'>Application built to improve productivity.</small>"
-url = "products/product-3/"
+parent = "Produtos"
+name = "Professional Services"
+pre = "<i class='dropdown-icon text-primary fas fa-code'></i>"
+post = "<small class='dropdown-subtitle'>Serviços customizados para sua empresa.</small>"
+url = "/produtos/professional-services"
 weight = 3
 
 [[main]]
-parent = "Products"
-name = "Analytics"
-pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>Create custom reports from any data set.</small>"
-url = "products/product-4/"
+parent = "Produtos"
+name = "Ver todos"
+pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
+url = "/produtos"
 weight = 4
 
 [[main]]
-parent = "Products"
-name = "View All Product"
-pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
-url = "products/"
-weight = 5
-
-[[main]]
-weight = 13
-name = "Blog"
+name = "Materiais"
+weight = 10
 hasChildren = true
+[main.params]
+isMenuLarge = true
 
 [[main]]
-parent = "Blog"
-name = "Blog Posts"
-url = "blog/"
-weight = 3
-
-[[main]]
-parent = "Blog"
-name = "Blog Details"
-url = "blog/post-1/"
-weight = 8
-
-[[main]]
-parent = "Blog"
-name = "Author"
-url = "author/"
-weight = 11
-
-[[main]]
-parent = "Blog"
-name = "Author Details"
-url = "author/awab-husameldin/"
-weight = 12
-
-[[main]]
-weight = 15
-name = "Pages"
-hasChildren = true
-
-[[main]]
-parent = "Pages"
-name = "Pricing"
-url = "pricing/"
+parent = "Materiais"
+name = "Guia de inovação"
+pre = "<i class='dropdown-icon text-primary fas fa-lightbulb'></i>"
+post = "<small class='dropdown-subtitle'>Veja o material.</small>"
+url = "https://7135940387210439462.partnermarketingstudio.com/guia-de-inovacao"
 weight = 1
 
 [[main]]
-parent = "Pages"
-name = "Case Studies"
-url = "case-studies/"
-weight = 4
+parent = "Materiais"
+name = "O futuro da IA"
+pre = "<i class='dropdown-icon text-primary fas fa-brain'></i>"
+post = "<small class='dropdown-subtitle'>Veja o material.</small>"
+url = "https://7135940387210439462.partnermarketingstudio.com/o-futuro-da-ia"
+weight = 2
 
-[[main]]
-parent = "Pages"
-name = "Case Studies Details"
-url = "case-studies/case-1/"
-weight = 5
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "contact/"
-weight = 10
-
-[[main]]
-parent = "Pages"
-name = "FAQ"
-url = "faq/"
-weight = 16
-
-[[main]]
-parent = "Pages"
-name = "Privacy Policy"
-url = "privacy-policy/"
-weight = 20
-
-[[main]]
-parent = "Pages"
-name = "Terms & Conditions"
-url = "terms-conditions/"
-weight = 24
 
 [[main]]
 name = "Contato"
@@ -182,42 +122,32 @@ weight = 3
 
 # footer menu middle
 [[footer_middle]]
-name = "CRM"
-url = "products/product-1/"
+name = "Google Cloud"
+url = "/produtos/google-cloud/"
 weight = 1
 
 [[footer_middle]]
-name = "Help Desk"
-url = "products/product-2/"
+name = "Professional Services"
+url = "/produtos/professional-services"
 weight = 2
 
 [[footer_middle]]
-name = "Workplace"
-url = "products/product-3/"
+name = "Ver todos"
+url = "/produtos"
 weight = 3
-
-[[footer_middle]]
-name = "Analytics"
-url = "products/product-4/"
-weight = 4
 
 # footer menu right
 [[footer_right]]
-name = "FAQ"
-url = "faq/"
+name = "Contato"
+url = "/contato"
 weight = 1
 
 [[footer_right]]
-name = "Contact"
-url = "contact/"
+name = "Suporte"
+url = "mailto:suporte@funccloud.com"
 weight = 2
 
 [[footer_right]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+name = "Trabalhe conosco"
+url = ""
 weight = 3
-
-[[footer_right]]
-name = "Terms & Conditions"
-url = "terms-conditions/"
-weight = 4

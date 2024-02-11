@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20230705095442-1f2d5ac8b18d // indirect
-	github.com/gethugothemes/hugo-modules/components/cookie-consent v0.0.0-20230705095442-1f2d5ac8b18d // indirect
+	github.com/gethugothemes/hugo-modules/components/cookie-consent v0.0.0-20240207043320-fa42312441f5 // indirect
 	github.com/gethugothemes/hugo-modules/components/crisp-chat v0.0.0-20230705095442-1f2d5ac8b18d // indirect
 	github.com/gethugothemes/hugo-modules/components/custom-script v0.0.0-20230705095442-1f2d5ac8b18d // indirect
 	github.com/gethugothemes/hugo-modules/components/preloader v0.0.0-20230705095442-1f2d5ac8b18d // indirect

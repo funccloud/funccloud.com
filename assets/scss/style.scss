@@ -24,9 +24,9 @@ $font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .fon
 $font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
 $font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 {{ end }}
-
 @import 'templates/bootstrap';
 @import 'templates/whatsapp';
+@import 'templates/cookie';
 @import 'mixins';
 @import 'buttons';
 @import 'typography';

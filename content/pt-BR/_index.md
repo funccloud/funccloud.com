@@ -57,7 +57,7 @@ service:
   # service item loop
   - title : "Sua Jornada para Cloud com a FuncCloud"
     images:
-    - "images/services/dt.jpg"
+    - "images/servicos/dt.jpg"
     button:
       enable : true
       label : "Conheça mais"
@@ -67,9 +67,9 @@ service:
   # service item loop
   - title : "Desenvolvendo equipes de alta performance"
     images:
-    - "images/services/gcp.png"
-    - "images/services/maps.png"
-    - "images/services/workspace.png"
+    - "images/servicos/gcp.png"
+    - "images/servicos/maps.png"
+    - "images/servicos/workspace.png"
     button:
       enable : true
       label : "Conheça nossos produtos e serviços"
