@@ -19,7 +19,7 @@ mainSections = ["blog"]
 whatsapp_link = "https://api.whatsapp.com/send?phone=551152422261&text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+com+um+especialista."
 
 # google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "" # example: G-XXXXXXXXXX
+google_tag_manager = "G-HZ42NGEFEZ" # example: G-XXXXXXXXXX
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script = ""
 # copyright
