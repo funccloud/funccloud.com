@@ -53,7 +53,7 @@ weight = 1
 
 [[main]]
 parent = "Produtos"
-name = "Google Cloud Platform"
+name = "Google Cloud"
 pre = "<i class='dropdown-icon text-primary fas fa-cloud'></i>"
 post = "<small class='dropdown-subtitle'>Extraia o máximo do Google Cloud conosco.</small>"
 url = "/produtos/google-cloud"
@@ -61,7 +61,7 @@ weight = 2
 
 [[main]]
 parent = "Produtos"
-name = "Professional Services"
+name = "Professional services"
 pre = "<i class='dropdown-icon text-primary fas fa-code'></i>"
 post = "<small class='dropdown-subtitle'>Serviços personalizados para sua empresa.</small>"
 url = "/produtos/professional-services"
