@@ -46,7 +46,7 @@ isMenuLarge = true
 [[main]]
 parent = "Produtos"
 name = "Google Workspace"
-pre = "<i class='dropdown-icon text-primary fas fa-calendar'></i>"
+pre = "<i class='dropdown-icon text-primary fab fa-google'></i>"
 post = "<small class='dropdown-subtitle'>Extraia o máximo do Google Workspace conosco.</small>"
 url = "/produtos/google-workspace"
 weight = 1
@@ -83,11 +83,19 @@ isMenuLarge = true
 
 [[main]]
 parent = "Materiais"
+name = "Blog"
+pre = "<i class='dropdown-icon text-primary fas fa-newspaper'></i>"
+post = "<small class='dropdown-subtitle'>Leia nosso conteúdo.</small>"
+url = "/blog"
+weight = 1
+
+[[main]]
+parent = "Materiais"
 name = "Guia de inovação"
 pre = "<i class='dropdown-icon text-primary fas fa-lightbulb'></i>"
 post = "<small class='dropdown-subtitle'>Veja o material.</small>"
 url = "https://7135940387210439462.partnermarketingstudio.com/guia-de-inovacao"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Materiais"
@@ -95,7 +103,7 @@ name = "O futuro da IA"
 pre = "<i class='dropdown-icon text-primary fas fa-brain'></i>"
 post = "<small class='dropdown-subtitle'>Veja o material.</small>"
 url = "https://7135940387210439462.partnermarketingstudio.com/o-futuro-da-ia"
-weight = 2
+weight = 3
 
 
 [[main]]
@@ -138,16 +146,16 @@ weight = 3
 
 # footer menu right
 [[footer_right]]
+name = "Blog"
+url = "/blog"
+weight = 1
+
+[[footer_right]]
 name = "Contato"
 url = "/contato"
-weight = 1
+weight = 2
 
 [[footer_right]]
 name = "Suporte"
 url = "mailto:suporte@funccloud.com"
-weight = 2
-
-[[footer_right]]
-name = "Trabalhe conosco"
-url = ""
 weight = 3

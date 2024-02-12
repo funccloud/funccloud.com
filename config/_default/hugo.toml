@@ -43,7 +43,7 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+home = ["HTML", "RSS", "WebAppManifest"]
 
 ############################# Imaging ############################
 [imaging]
