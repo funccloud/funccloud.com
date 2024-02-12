@@ -63,7 +63,7 @@ weight = 2
 parent = "Produtos"
 name = "Professional Services"
 pre = "<i class='dropdown-icon text-primary fas fa-code'></i>"
-post = "<small class='dropdown-subtitle'>Serviços customizados para sua empresa.</small>"
+post = "<small class='dropdown-subtitle'>Serviços personalizados para sua empresa.</small>"
 url = "/produtos/professional-services"
 weight = 3
 
