@@ -82,15 +82,15 @@ testimonials:
   enable: true
   title: "Depoimentos"
   testimonials_quotes:
-  - quote: "O trabalho de desenvolvimento da Funccloud foi fundamental para conquistarmos um grande cliente. Sempre atenciosos com nossas dúvidas, a equipe foi ágil na execução e comprometidos com nosso sucesso. Estamos muito satisfeitos com o trabalho."
-    name: "Lucas Magrin"
-    designation: "Head de inovação na Tapps Ventures"
-    image: "images/depoimentos/magrin.jpg"
-
   - quote: "Sempre fomos muito bem atendidos pela equipe da Funccloud, pois estão sempre prontos a nos atender e tirar nossas dúvidas, dando soluções para os problemas, auxiliando nossos colaboradores! O atendimento é perfeito!"
     name: "Antonio Marcos"
     designation: "CEO do Grupo Siena"
     image: "images/depoimentos/marcos.jpg"
+    
+  - quote: "O trabalho de desenvolvimento da Funccloud foi fundamental para conquistarmos um grande cliente. Sempre atenciosos com nossas dúvidas, a equipe foi ágil na execução e comprometidos com nosso sucesso. Estamos muito satisfeitos com o trabalho."
+    name: "Lucas Magrin"
+    designation: "Head de inovação na Tapps Ventures"
+    image: "images/depoimentos/magrin.jpg"
 
   - quote: "Ao apresentarmos nosso site à Funccloud, logo de início já detectaram diversos pontos de melhoria, e ao final, sentimos o resultado imediato como, maiores visualizações. Com isso, alavancamos nossas vendas, através de nosso e-comerce que é uma ferramenta muito importante para o faturamento de nossa empresa."
     name: "Ricardo Curia"
