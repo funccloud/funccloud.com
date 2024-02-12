@@ -1,5 +1,4 @@
 ######################## default configuration ####################
-baseURL = "https://funccloud.com"
 title = "FuncCloud - Facilitamos a Inovação na Nuvem"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/Sao_Paulo"
