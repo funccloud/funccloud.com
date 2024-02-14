@@ -8,8 +8,8 @@ layout: "about"
 
 # about
 about:
-  title: "Nós podemos ser a TI da sua empresa."
-  content: 'Em um mundo globalizado e de fácil acesso a informação, a tecnologia e a "digitalização" das empresas passou a ser algo obrigatório. Nós nascemos para te apoiar com a TI da sua empresa.'
+  title: "Especialistas em Inovação na Nuvem"
+  content: "A FuncCloud foi criada a partir do desejo de nosso fundador de melhorar a entrega de serviços terceirizados de TI. Unindo sua experiência ao desejo, nosso fundador começou a gerar valor na Jornada de Inovação na Nuvem entregando os nossos serviços de forma integra com transparência e olhar sistêmico."
   image: "images/about/about.jpg"
 
 
@@ -18,17 +18,17 @@ founders_quote:
   name: "Felipe Oliveira"
   subtitle: "Fundador e CEO da FuncCloud"
   image: "images/about/founder.png"
-  content: "Nós estamos apoindo nossos clientes a usar tecnologia como um diferencial competivo para se destacar em seus mercados."
+  content: "Nós estamos apoindo nossos clientes a usar a tecnologia de nuvem como um diferencial competivo para inovar em seus mercados."
 
 
 # who_we_are
 who_we_are:
-  title: "Quem nós somos"
-  content: "Acreditamos que a tecnologia de modo geral pode ser um impulsionador para qualquer negócio. Nós nascemos para ajudar as empresas à extrairem o máximo da tecnologia."
+  title: "Quem somos nós"
+  content: "Construimos relacionamentos de longo prazo, gerando valor na Jornada de Inovação na Nuvem de nossos clientes."
 
 
 # our_mission
 our_mission:
   title: "Nossa missão"
-  content: "Apoiamos empresas como a sua a extrair o máximo da tecnologia. A computação em nuvem será a base para evolução tecnológica dos próximos anos, por isso nossa missão é permitir que empresas de quaisquer mercado e tamanho possam aproveitar os benefícios de uma TI de ponta, por meio de nossos especialistas."
+  content: "Facilitar a Inovação na Nuvem por meio de pessoas, processos e tecnologia."
 ---
