@@ -9,7 +9,7 @@ layout: "about"
 # about
 about:
   title: "Especialistas em Inovação na Nuvem"
-  content: "A FuncCloud foi criada a partir do desejo de nosso fundador de melhorar a entrega de serviços terceirizados de TI. Unindo sua experiência ao desejo, nosso fundador começou a gerar valor na Jornada de Inovação na Nuvem entregando os nossos serviços de forma integra com transparência e olhar sistêmico."
+  content: "A FuncCloud foi criada a partir do desejo de nosso fundador de melhorar a entrega de serviços terceirizados de TI. Unindo sua experiência ao desejo, nosso fundador começou a gerar valor na Jornada de Inovação na Nuvem de nossos clientes, entregando os nossos serviços de forma integra com transparência e olhar sistêmico."
   image: "images/about/about.jpg"
 
 
