@@ -9,7 +9,7 @@
               <div class="h5 mb-4">{{ site.Params.footer_menu_left }}</div>
               <ul class="list-unstyled footer-list">
                 {{ range site.Menus.footer_left }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
               {{ end }}
@@ -19,7 +19,7 @@
               <div class="h5 mb-4">{{ site.Params.footer_menu_middle }}</div>
               <ul class="list-unstyled footer-list">
                 {{ range site.Menus.footer_middle }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
               {{ end }}
@@ -29,7 +29,7 @@
               <div class="h5 mb-4">{{ site.Params.footer_menu_right }}</div>
               <ul class="list-unstyled footer-list">
                 {{ range site.Menus.footer_right }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
               {{ end }}
