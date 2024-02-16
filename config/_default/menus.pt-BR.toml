@@ -35,9 +35,8 @@ pre = "<i class='dropdown-icon text-primary fas fa-tasks'></i>"
 post = "<small class='dropdown-subtitle'>Acesse nosso perfil de parceiro do Google.</small>"
 weight = 3
 
-
 [[main]]
-weight = 6
+weight = 5
 name = "Produtos"
 hasChildren = true
 [main.params]
@@ -73,6 +72,11 @@ name = "Ver todos"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
 url = "/produtos"
 weight = 4
+
+[[main]]
+weight = 6
+name = "Estudos de caso"
+url = "/estudos"
 
 [[main]]
 name = "Materiais"
@@ -151,11 +155,11 @@ url = "/blog"
 weight = 1
 
 [[footer_right]]
-name = "Contato"
-url = "/contato"
+name = "Estudos de caso"
+url = "/estudos"
 weight = 2
 
 [[footer_right]]
-name = "Suporte"
-url = "mailto:suporte@funccloud.com"
+name = "Contato"
+url = "/contato"
 weight = 3
