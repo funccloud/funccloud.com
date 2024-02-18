@@ -21,7 +21,7 @@ banner:
 product_info:
   enable : true
   title: "Descubra as incríveis vantagens do Google Maps Platform!"
-  content: " Google Maps Platform é a solução líder e mais completa em mapeamento e geolocalização." 
+  content: "Google Maps Platform é a solução líder e mais completa em mapeamento e geolocalização." 
 
   features:
   - image: "images/produtos/maps-icon.webp"
@@ -66,6 +66,6 @@ cta:
   button:
     enable : true
     label : "FALE COM UM ESPECIALISTA"
-    link : "contact/"
+    link : "/contato"
 
 ---

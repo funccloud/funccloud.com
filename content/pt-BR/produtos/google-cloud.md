@@ -74,6 +74,6 @@ cta:
   button:
     enable : true
     label : "FALE COM UM ESPECIALISTA"
-    link : "contact/"
+    link : "/contato"
 
 ---
