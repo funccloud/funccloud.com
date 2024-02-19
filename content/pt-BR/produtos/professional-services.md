@@ -25,28 +25,53 @@ product_info:
 
   features:
   - image: "images/produtos/tam.jpg"
-    content : '##### Technical Account Management
+    content : '##### Cloud Discovery
 
 
-    Nossos gerentes técnicos ajudam você a obter o máximo de aproveitamento com a computação em nuvem.<br>Esse suporte dedicado, estará ao seu lado durante todas as fases de sua jornada de adoção da nuvem!
+    - Análise e Orientação Técnica;
+
+    - Mapeamento Técnico;
+
+    - Treinamento Técnico;
 
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
 
-  - image: "images/produtos/suporte.jpg"
-    content : '##### Suporte
+  - image: "images/produtos/migration.jpg"
+    content : '##### Cloud Design
 
 
-    Nossa equipe de especialistas, com ampla experiência em Kubernetes, arquiteturas e ferramentas Cloud-Native, IaC, GitOps e muito mais, prontos para atendê-lo.
+    - Entendimento do Desafio;
+
+    - Ideação de Soluções;
+
+    - Validação Técnica e de Negócios;
+
+    - Planejamento da Execução;
 
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
 
   - image: "images/produtos/software.jpg"
-    content : '##### Desenvolvimento de Software
+    content : '##### Cloud Solution
 
 
-    Nossos desenvolvedores estão prontos para criar sistemas que atendem a necessidade da sua empresa, extraiem o máximo da computação em nuvem e trazem o melhor custo benefício.
+    - Desenvolvimento de Solução;
+
+    - Implementação da Solução;
+
+    - Adoção da Solução;
+
+    
+    <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
+
+  - image: "images/produtos/suporte.jpg"
+    content : '##### Cloud Care
+
+
+    - Suporte Técnico;
+
+    - Acompanhamento dos Resultados;
 
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
