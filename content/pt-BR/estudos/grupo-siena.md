@@ -22,4 +22,4 @@ Processos otimizados com as soluções Gmail, Planilhas, Documentos, Drive e Ger
 - Maior disponibilidade nos sistemas;
 
 
-Como visto, a parceria do Grupo Siena com a FuncCloud proporcionou resultados muito positivos. A movimentação para nuvem do Google aumentou a produtividade, acelerou processos e, o mais importante, criou um ambiente colaborativo e propiciou sistmas mais disponíveis. Dessa forma, é possível, oferecer um serviço ainda melhor aos clientes e expandir os negócios.
+Como visto, a parceria do Grupo Siena com a FuncCloud proporcionou resultados muito positivos. A movimentação para nuvem do Google aumentou a produtividade, acelerou processos e, o mais importante, criou um ambiente colaborativo e propiciou sistemas mais disponíveis. Dessa forma, é possível, oferecer um serviço ainda melhor aos clientes e expandir os negócios.
