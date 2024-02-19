@@ -24,7 +24,7 @@ product_info:
   content: "Nos bastidores, temos um time de profissionais certificados, cada um maestro em sua área. Espere nada menos que excelência ao colaborar com a FuncCloud, priorizando a segurança na nuvem e as melhores práticas DevOps em todos os nossos serviços." 
 
   features:
-  - image: "images/produtos/tam.jpg"
+  - image: "images/produtos/discovery.svg"
     content : '##### Cloud Discovery
 
 
@@ -37,7 +37,7 @@ product_info:
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
 
-  - image: "images/produtos/migration.jpg"
+  - image: "images/produtos/design.svg"
     content : '##### Cloud Design
 
 
@@ -52,7 +52,7 @@ product_info:
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
 
-  - image: "images/produtos/software.jpg"
+  - image: "images/produtos/solution.svg"
     content : '##### Cloud Solution
 
 
@@ -65,7 +65,7 @@ product_info:
     
     <a class="btn btn-sm btn-primary">FALE COM UM ESPECIALISTA</a>'
 
-  - image: "images/produtos/suporte.jpg"
+  - image: "images/produtos/care.svg"
     content : '##### Cloud Care
 
 
