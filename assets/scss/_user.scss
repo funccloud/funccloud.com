@@ -53,6 +53,15 @@ a.whatsapp-text {
     padding-left: 8px;
 }
 
+.svc-icons {
+    z-index: 500;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
 @media (max-width: 767px) {
     .whatsapp-container {
         bottom: 25vh;
