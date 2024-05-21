@@ -21781,6 +21781,14 @@ a.whatsapp-text {
   gap: 15px;
 }
 
+.list-unstyled .dropdown-header {
+  font-size: 1.3rem;
+}
+
+.dropdown-item .badge {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 767px) {
   .whatsapp-container {
     bottom: 25vh;
