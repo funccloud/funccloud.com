@@ -1,1 +1,7 @@
-
+[build]
+command = "npm run prerender"
+publish = "dist/funccloud.com/browser"
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
