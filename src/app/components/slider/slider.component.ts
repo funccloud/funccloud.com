@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss',
-  host: { ngSkipHydration: 'true' },
 })
 export class SliderComponent {
 
