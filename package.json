@@ -7,7 +7,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prerender": "ng run funccloud.com:prerender",
     "serve:ssr:funccloud.com": "node dist/funccloud.com/server/server.mjs"
   },
   "private": true,

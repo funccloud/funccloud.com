@@ -1,5 +1,5 @@
 [build]
-command = "npm run prerender"
+command = "ng build -- --configuration production --prerender"
 publish = "dist/funccloud.com/browser"
 [[redirects]]
 from = "/*"
