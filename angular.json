@@ -32,26 +32,20 @@
               "src/assets/vendor/font-awesome/css/all.min.css",
               "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
               "src/assets/vendor/animate/animate.min.css",
-              "src/assets/vendor/tiny-slider/tiny-slider.css",
               "src/assets/vendor/glightbox/css/glightbox.css",
               "src/assets/vendor/aos/aos.css",
+              "./node_modules/tiny-slider/src/tiny-slider.scss",
               "src/assets/scss/style.scss"
             ],
             "scripts": [
               "src/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/assets/vendor/glightbox/js/glightbox.js",
               "src/assets/vendor/purecounterjs/dist/purecounter_vanilla.js",
-              "src/assets/vendor/jarallax/jarallax.min.js",
               "src/assets/vendor/aos/aos.js",
               "src/assets/vendor/ityped/index.js",
-              "src/assets/vendor/tiny-slider/tiny-slider.js",
+              "src/assets/vendor/jarallax/jarallax.min.js",
               "src/assets/js/functions.js"
-            ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {

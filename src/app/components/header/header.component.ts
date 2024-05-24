@@ -1,14 +1,36 @@
-import { Component, Input } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { AfterViewInit, Component, Input } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
   @Input() floating = false;
+  @Input() solucoes = false;
+  @Input() verticais = false;
 
+  ngAfterViewInit(): void {
+    let stickyNav = document.querySelector('.navbar-sticky') as HTMLElement;
+    let stickyHeight = stickyNav.offsetHeight;
+    stickyNav.insertAdjacentHTML('afterend', '<div id="sticky-space"></div>');
+    let stickySpace = document.querySelector('#sticky-space') as HTMLElement;
+    document.addEventListener('scroll', function () {
+      let scTop = window.scrollY || document.documentElement.scrollTop;
+      if (scTop >= 100) {
+        stickySpace.classList.add('active');
+        stickySpace.style.height = stickyHeight + 'px';
+        stickyNav.classList.add('navbar-sticky-on');
+      } else {
+        stickySpace.classList.remove('active');
+        stickySpace.style.height = '0px';
+        stickyNav.classList.remove('navbar-sticky-on');
+      }
+    });
+
+  }
 }

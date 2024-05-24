@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+import { tinySlider } from '../../utils/slider';
 
 @Component({
   selector: 'app-slider',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss',
 })
-export class SliderComponent {
+export class SliderComponent implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    tinySlider('home-slider');
+  }
 
 }

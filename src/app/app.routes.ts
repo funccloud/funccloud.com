@@ -6,11 +6,11 @@ export const routes: Routes = [
   {
     path: '',
     component: IndexComponent,
-    title: 'Funccloud Soluções Tecnológicas'
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem'
   },
   {
     path: 'solucoes/produtividade-colaboracao/google-workspace',
     component: GwsComponent,
-    title: 'Funccloud Soluções Tecnológicas | Google Workspace'
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Google Workspace'
   },
 ];

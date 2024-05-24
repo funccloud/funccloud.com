@@ -1,10 +1,10 @@
-<header [class]="floating ? 'navbar-floating navbar-light navbar-stick' : 'navbar-light navbar-stick'">
+<header [class]="floating ? 'navbar-floating navbar-light navbar-sticky' : 'navbar-light navbar-sticky'">
 
   <!-- Logo Nav START -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo START -->
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" routerLink="/">
         <img class="navbar-brand-item" src="assets/images/fc/logo.png" alt="Logo">
       </a>
       <!-- Logo END -->
@@ -18,10 +18,11 @@
       <!-- Main Menu START -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav navbar-nav-scroll mx-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Home</a></li>
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a class="nav-link dropdown-toggle" href="#" id="solucoesMenu" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Soluções</a>
+            <a [class]="solucoes ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+              id="solucoesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soluções</a>
             <div class="dropdown-menu" aria-labelledby="solucoesMenu">
               <div class="container">
                 <div class="row g-0 flex-fill">
@@ -30,8 +31,8 @@
                       <li class="dropdown-header"><img class="img-fluid"
                           src="/assets/images/fc/i-produtividade.svg"><span class="ps-2">Produtividade e
                           Colaboração</span></li>
-                      <li><a class="dropdown-item"
-                          routerLink="solucoes/produtividade-colaboracao/google-workspace"><span
+                      <li><a class="dropdown-item" routerLink="/solucoes/produtividade-colaboracao/google-workspace"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
                             class="badge text-bg-primary">Google
                             Workspace</span></a>
                       </li>
@@ -56,8 +57,8 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Cases de Sucesso</a></li>
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a class="nav-link dropdown-toggle" href="#" id="verticaisMenu" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Verticais</a>
+            <a [class]="verticais ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+              id="verticaisMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Verticais</a>
             <div class="dropdown-menu" aria-labelledby="verticaisMenu">
               <div class="container">
                 <div class="row g-0 flex-fill">

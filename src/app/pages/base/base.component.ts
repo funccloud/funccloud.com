@@ -11,4 +11,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
 })
 export class BaseComponent {
   @Input() floatingHeader = false;
+  @Input() solucoes = false;
+  @Input() verticais = false;
 }
