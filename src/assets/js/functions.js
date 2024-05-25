@@ -39,8 +39,7 @@
 
 var e = {
   init: function () {
-    e.preLoader(),
-      e.megaMenu(),
+    e.megaMenu(),
       e.parallaxBG(),
       e.marqueeAnimate(),
       e.aosFunc(),
@@ -179,21 +178,6 @@ var e = {
   selectAll: function (selectors) {
     return document.querySelectorAll(selectors);
   },
-
-  // START: 01 Preloader
-  preLoader: function () {
-    window.onload = function () {
-      var preloader = e.select('.preloader');
-      if (e.isVariableDefined(preloader)) {
-        preloader.className += ' animate__animated animate__fadeOut';
-        setTimeout(function () {
-          preloader.style.display = 'none';
-        }, 200);
-      }
-    };
-  },
-  // END: Preloader
-
 
   // START: 03 Mega Menu
   megaMenu: function () {
