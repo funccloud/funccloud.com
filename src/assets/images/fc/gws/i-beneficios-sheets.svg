@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-i-beneficios-sheets">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="i-beneficios-sheets" clip-path="url(#clip-i-beneficios-sheets)">
+    <image id="NoPath_-_Copy_16_" data-name="NoPath - Copy (16)" width="62" height="62" transform="translate(1 1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAilBMVEVHcEwfv18RslAFrkoAqkYArEYGpUUzmUwZslUHrkwCrUcBq0cAq0cArEcCnz8NiTg/n184xnEJrk0ArEcArUcAnT4ChC4Rr1MDrEgAgy0Anj4Ap0QBrEgAq0U6v3Gk4b2l4r4Aq0Rcyon///9ayYj+//70+/ev5cbf9ejg9ekgtl4ArEYCrUkftl3kmReGAAAAGXRSTlMACDlZW1pNCh6k8f7+/viHCAml////+zryrb8migAAAQ1JREFUeAFiGFwA0H5dJTYMA1EUrVkcZo7Cife/vDJX8psy6f7PMYOiOEkzV2leUOYZF1I506ZWx/ONZstXu9MlCL1+BTAgCImsAghCqioBLGQAgAIEkIABIGAACBgAAgaAAAEgAAAICBgOnggFBp41GnYeZXIAOGo/TqcAQKkMAQEYeyMBk+ls7mk2nRCAxdJ6Wy4owGptPa1XVGCzvT2MnbW7293fbl4B7A/H8VWnubXz0/iq42H/GqC8OVvjK2B8c27LrwXwIXzyScSXMdwH4T747BcKfqV99ksVF4AAfCqQ0oEULXlAMnECsaAC/Z4TiDgVaDY8C89mXyqYFJx5l569JM1AaRJHZz+qCyg+04YP4iFmAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>

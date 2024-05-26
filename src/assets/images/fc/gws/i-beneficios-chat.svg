@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-i-beneficios-chat">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="i-beneficios-chat" clip-path="url(#clip-i-beneficios-chat)">
+    <image id="NoPath_-_Copy_4_" data-name="NoPath - Copy (4)" width="62" height="62" transform="translate(1 1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADdUlEQVR4Ae3bU5wjSxQG8Iqda9u27WhsdOfaueMJrq3V09pWutPj6V77ad/2aW3bTm3V2j6Z3ul6+MZI/X+nTiXdVchbma7pMAAGwAAYgIYDAPDJ2Ni9wbHRrBK5miuVa0tTHfp/g3K46OOxsRfKWsosKQP4cuaXJl6Jhjg5vICTa/Zycm2yrVKq1Own7zdySm1/rrXylpQA8EqkmPzTHeSfYpWlP60EUICCGVU2Xg4rKhw8ppVApwMowJeTf7glqETmqBGATgfaE0ABvh3/510fKtHFKq2AJG2MwAA/3kUqYJFaAejqAAnAAD4lALwS1iwAA/hG/vGOIAEgCBgsbQlwfwvnto5OvxMJgbtOieS54zGp6NWs+tCy7MYQBklDCOc2leESuQbzY8KpA7hr4kdWu5T1uUn0T9fFvYtQ3HPa6IZ/sMze+cW9jv9fwI7/XwTIC9jV8SV8V/cPsFf8IjUAGGOdXcqI6kXfHiR48Vkz4n2M/nsaoz8ex+hPoPxxKM4OLxKEz2klwAJc15D7sEH0LaMDPG+AP58AD0W4q9sHdDrAApglf55O8OxTIwCdDrQn8JAAaLSHQ3FvUnUAfz5OewJtjHR1AAQQPKXqBXiRrg5gAAyAATAABsAALFLGxzo6OK0C3NJc8p1e9GkX4Pam4jINAzAABnDLlQEAd1n8hqbCMp1wngAjCcD/z6gQ4NiNEViA0R6MujyP0R9qAzh2awwWgKbfmxj99aTKAI7dHIUHiHsw6v36oV7wFyyCowMBqA8leTl8/rfHgQGOZfh7GA14i1YEWIwD3l77dt2X5dyYcAnYBomr63MuDoBGhI5nERr97m0AW2ROC6C+0MvxQuAuBsAAAAHcWgdwSFkMQK0AOsG7WNMABsE/6+aWghs0CaAjsSUyO4JvlbVJGWU6tQ0+7ktaxLSG2xs/vA0cwCIGys67JEXfSlIto8jHQ1HcOwwiZjHQj+5VuF0uuDYlm6WN5wmgF3zLnfXZWRhjHcIILJc+WAAAvehdaU4EstS/LR4AgHx//TX1eSX0Z7UGQJvROlcim2/XByaQ6Ck7wzK0wZQIHBy85gAMon+rW8r5ShNHZoyiP3Ri2Xu3OKWsb2m31wSAO1HwIlnfFx8u+82kJ3xLlyNNHZoije4VeyIz5q7P8aFff9WzU2PtLQyAATCAA6TjrEwF7WfZAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>
