@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { AfterViewInit, Component, input } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
@@ -10,9 +10,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements AfterViewInit {
-  @Input() floating = false;
-  @Input() solucoes = false;
-  @Input() verticais = false;
+  floating = input(false);
+  solucoes = input(false);
+  verticais = input(false);
 
   ngAfterViewInit(): void {
     let stickyNav = document.querySelector('.navbar-sticky') as HTMLElement;

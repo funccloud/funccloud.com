@@ -1,4 +1,4 @@
-<header [class]="floating ? 'navbar-floating navbar-light navbar-sticky' : 'navbar-light navbar-sticky'">
+<header [class]="floating() ? 'navbar-floating navbar-light navbar-sticky' : 'navbar-light navbar-sticky'">
 
   <!-- Logo Nav START -->
   <nav class="navbar navbar-expand-lg">
@@ -21,7 +21,7 @@
           <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
               [routerLinkActiveOptions]="{exact: true}">Home</a></li>
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a [class]="solucoes ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+            <a [class]="solucoes() ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
               id="solucoesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soluções</a>
             <div class="dropdown-menu" aria-labelledby="solucoesMenu">
               <div class="container">
@@ -55,7 +55,7 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Cases de Sucesso</a></li>
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a [class]="verticais ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+            <a [class]="verticais() ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
               id="verticaisMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Verticais</a>
             <div class="dropdown-menu" aria-labelledby="verticaisMenu">
               <div class="container">

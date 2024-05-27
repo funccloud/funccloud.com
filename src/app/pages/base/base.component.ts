@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
+import { Component, input } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-base',
@@ -10,7 +10,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
   styleUrl: './base.component.scss'
 })
 export class BaseComponent {
-  @Input() floatingHeader = false;
-  @Input() solucoes = false;
-  @Input() verticais = false;
+  floatingHeader = input(false);
+  solucoes = input(false);
+  verticais = input(false);
 }
