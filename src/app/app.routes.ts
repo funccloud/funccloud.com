@@ -4,6 +4,9 @@ import { GwsComponent } from './pages/gws/gws.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { PostureReviewComponent } from './pages/posture-review/posture-review.component';
 import { CmsComponent } from './pages/cms/cms.component';
+import { AiComponent } from './pages/ai/ai.component';
+import { SuporteComponent } from './pages/suporte/suporte.component';
+import { ModernizacaoInfraComponent } from './pages/modernizacao-infra/modernizacao-infra.component';
 
 export const routes: Routes = [
   {
@@ -30,5 +33,20 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/cloud-managed-services',
     component: CmsComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Cloud Managed Services (CMS)'
+  },
+  {
+    path: 'solucoes/cloud-services/ia-ml',
+    component: AiComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | IA & ML'
+  },
+  {
+    path: 'solucoes/cloud-services/suporte-monitoramento',
+    component: SuporteComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Suporte & Monitoramento'
+  },
+  {
+    path: 'solucoes/cloud-services/modernizacao-infra',
+    component: ModernizacaoInfraComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Modernização de Infra'
   },
 ];
