@@ -7,6 +7,7 @@ import { CmsComponent } from './pages/cms/cms.component';
 import { AiComponent } from './pages/ai/ai.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { ModernizacaoInfraComponent } from './pages/modernizacao-infra/modernizacao-infra.component';
+import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.component';
 
 export const routes: Routes = [
   {
@@ -48,5 +49,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/modernizacao-infra',
     component: ModernizacaoInfraComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Modernização de Infra'
+  },
+  {
+    path: 'solucoes/cloud-services/data-analytics',
+    component: DataAnalyticsComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Data & Analytics'
   },
 ];
