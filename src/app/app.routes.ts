@@ -9,6 +9,7 @@ import { SuporteComponent } from './pages/suporte/suporte.component';
 import { ModernizacaoInfraComponent } from './pages/modernizacao-infra/modernizacao-infra.component';
 import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.component';
 import { MigrationComponent } from './pages/migration/migration.component';
+import { FinopsComponent } from './pages/finops/finops.component';
 
 export const routes: Routes = [
   {
@@ -60,5 +61,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/migracao',
     component: MigrationComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Migração'
+  },
+  {
+    path: 'solucoes/cloud-services/finops',
+    component: FinopsComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Finops'
   },
 ];
