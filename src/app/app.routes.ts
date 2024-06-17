@@ -8,6 +8,7 @@ import { AiComponent } from './pages/ai/ai.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { ModernizacaoInfraComponent } from './pages/modernizacao-infra/modernizacao-infra.component';
 import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.component';
+import { MigrationComponent } from './pages/migration/migration.component';
 
 export const routes: Routes = [
   {
@@ -54,5 +55,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/data-analytics',
     component: DataAnalyticsComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Data & Analytics'
+  },
+  {
+    path: 'solucoes/cloud-services/migracao',
+    component: MigrationComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Migração'
   },
 ];
