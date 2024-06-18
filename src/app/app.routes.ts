@@ -10,6 +10,7 @@ import { ModernizacaoInfraComponent } from './pages/modernizacao-infra/moderniza
 import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.component';
 import { MigrationComponent } from './pages/migration/migration.component';
 import { FinopsComponent } from './pages/finops/finops.component';
+import { BackupComponent } from './pages/backup/backup.component';
 
 export const routes: Routes = [
   {
@@ -66,5 +67,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/finops',
     component: FinopsComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Finops'
+  },
+  {
+    path: 'solucoes/cloud-services/backup-dr',
+    component: BackupComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Backup & DR'
   },
 ];
