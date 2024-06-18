@@ -11,6 +11,7 @@ import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.co
 import { MigrationComponent } from './pages/migration/migration.component';
 import { FinopsComponent } from './pages/finops/finops.component';
 import { BackupComponent } from './pages/backup/backup.component';
+import { DevopsComponent } from './pages/devops/devops.component';
 
 export const routes: Routes = [
   {
@@ -72,5 +73,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/backup-dr',
     component: BackupComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Backup & DR'
+  },
+  {
+    path: 'solucoes/cloud-services/devops-sre',
+    component: DevopsComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Devops & SRE'
   },
 ];
