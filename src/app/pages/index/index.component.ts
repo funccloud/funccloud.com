@@ -25,7 +25,7 @@ export class IndexComponent {
     const to = 'contato@funccloud.com';
     const subject = 'Formulário de Inscrição na Newsletter';
     const content = { email: this.email };
-    this.emailService.sendEmail(to, subject, content).then(() => {
+    this.emailService.sendEmail(to, subject, 'subscribe', content).then(() => {
       alert('Inscrição realizada com sucesso!');
     }).catch((e) => {
       console.error(e);

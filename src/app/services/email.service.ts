@@ -1,17 +1,24 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { sendEmail } from "@netlify/emails";
+import { environment } from '../../environments/environment';
+import { lastValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
-  sendEmail(to: string, subject: string, content: Record<string, unknown>): Promise<any> {
-    return sendEmail({
+  constructor(private http: HttpClient) { }
+  sendEmail(to: string, subject: string, template: string, content: Record<string, unknown>): Promise<any> {
+    let body = JSON.stringify({
       from: "noreply@funccloud.com",
       to: to,
       subject: subject,
-      template: "subscribe",
       parameters: content,
     });
+    return lastValueFrom(this.http.post(`/.netlify/functions/emails/${template}`, body, {
+      headers: {
+        "netlify-emails-secret": environment.envVar.NETLIFY_EMAILS_SECRET
+      }
+    }));
   }
 }
