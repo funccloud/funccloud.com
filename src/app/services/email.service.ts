@@ -10,7 +10,7 @@ export class EmailService {
   constructor(private http: HttpClient) { }
   sendEmail(to: string, subject: string, template: string, content: Record<string, unknown>): Promise<any> {
     let body = JSON.stringify({
-      from: "noreply@funccloud.com",
+      from: "FuncCloud <noreply@funccloud.com>",
       to: to,
       subject: subject,
       parameters: content,
