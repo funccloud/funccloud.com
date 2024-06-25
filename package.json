@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^18.0.3",
     "@angular/platform-browser-dynamic": "^18.0.3",
     "@angular/router": "^18.0.3",
-    "@sendgrid/mail": "^8.1.3",
+    "@netlify/emails": "^1.1.0",
     "ng-process-env": "^16.0.6",
     "rxjs": "~7.8.0",
     "tiny-slider": "^2.9.4",

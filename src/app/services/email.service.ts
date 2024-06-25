@@ -1,20 +1,17 @@
 import { Injectable } from '@angular/core';
-import { MailService } from "@sendgrid/mail";
-import { environment } from '../../environments/environment';
+import { sendEmail } from "@netlify/emails";
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
-  sendEmail(to: string, subject: string, content: string): Promise<any> {
-    let sgMail = new MailService();
-    sgMail.setApiKey(environment.envVar.SENDGRID_API_KEY);
-    const msg = {
-      to,
-      from: 'noreply@funccloud.com',
-      subject,
-      html: content
-    };
-    return sgMail.send(msg);
+  sendEmail(to: string, subject: string, content: Record<string, unknown>): Promise<any> {
+    return sendEmail({
+      from: "noreply@funccloud.com",
+      to: to,
+      subject: subject,
+      template: "subscribe",
+      parameters: content,
+    });
   }
 }
