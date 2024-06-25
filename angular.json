@@ -43,6 +43,9 @@
               "src/assets/vendor/ityped/index.js",
               "src/assets/vendor/jarallax/jarallax.min.js",
               "src/assets/js/functions.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "@sendgrid/mail"
             ]
           },
           "configurations": {
