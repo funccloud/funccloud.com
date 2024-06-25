@@ -12,6 +12,7 @@ import { MigrationComponent } from './pages/migration/migration.component';
 import { FinopsComponent } from './pages/finops/finops.component';
 import { BackupComponent } from './pages/backup/backup.component';
 import { DevopsComponent } from './pages/devops/devops.component';
+import { CaseStudiesComponent } from './pages/case-studies/case-studies.component';
 
 export const routes: Routes = [
   {
@@ -78,5 +79,10 @@ export const routes: Routes = [
     path: 'solucoes/cloud-services/devops-sre',
     component: DevopsComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Devops & SRE'
+  },
+  {
+    path: 'cases-de-sucesso',
+    component: CaseStudiesComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Cases de Sucesso'
   },
 ];
