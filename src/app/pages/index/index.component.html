@@ -285,19 +285,23 @@
                   garantindo o crescimento do negócio de forma sustentável.</p>
                 <span class="divider my-3"></span>
                 <div class="d-block my-3">
-                  <a routerLink="" class="badge text-bg-primary">Posture Review (Segurança &
+                  <a routerLink="/solucoes/cloud-services/posture-review" class="badge text-bg-primary">Posture Review
+                    (Segurança &
                     Compliance)</a>
-                  <a routerLink="" class="badge text-bg-primary">Cloud Managed Services
+                  <a routerLink="/solucoes/cloud-services/cloud-managed-services" class="badge text-bg-primary">Cloud
+                    Managed Services
                     (CMS)</a>
-                  <a routerLink="" class="badge text-bg-primary">Suporte &
+                  <a routerLink="/solucoes/cloud-services/suporte-monitoramento" class="badge text-bg-primary">Suporte &
                     Monitoramento</a>
-                  <a routerLink="" class="badge text-bg-primary">Modernização de Infra</a>
-                  <a routerLink="" class="badge text-bg-primary">Data & Analytics</a>
-                  <a routerLink="" class="badge text-bg-primary">Migração</a>
-                  <a routerLink="" class="badge text-bg-primary">Backup & DR</a>
-                  <a routerLink="" class="badge text-bg-primary">IA & ML</a>
-                  <a routerLink="" class="badge text-bg-primary">Finops</a>
-                  <a routerLink="" class="badge text-bg-primary">Devops & SRE</a>
+                  <a routerLink="/solucoes/cloud-services/modernizacao-infra" class="badge text-bg-primary">Modernização
+                    de Infra</a>
+                  <a routerLink="/solucoes/cloud-services/data-analytics" class="badge text-bg-primary">Data &
+                    Analytics</a>
+                  <a routerLink="/solucoes/cloud-services/migracao" class="badge text-bg-primary">Migração</a>
+                  <a routerLink="/solucoes/cloud-services/backup-dr" class="badge text-bg-primary">Backup & DR</a>
+                  <a routerLink="/solucoes/cloud-services/ia-ml" class="badge text-bg-primary">IA & ML</a>
+                  <a routerLink="/solucoes/cloud-services/finops" class="badge text-bg-primary">Finops</a>
+                  <a routerLink="/solucoes/cloud-services/devops-sre" class="badge text-bg-primary">Devops & SRE</a>
                 </div>
               </div>
             </div>
@@ -474,8 +478,9 @@
         <!-- Our Work Block -->
         <div class="col-sm-6">
           <div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-6 h-100">
-            <h2 class="mb-3 display-6"><a class="text-white-stroke" href="#">Cases de Sucesso</a></h2>
-            <a class="btn text-white mb-0" href="#">Confira!</a>
+            <h2 class="mb-3 display-6"><a class="text-white-stroke" routerLink="/cases-de-sucesso">Cases de Sucesso</a>
+            </h2>
+            <a class="btn text-white mb-0" routerLink="/cases-de-sucesso">Confira!</a>
             <img class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9"
               src="assets/images/about/05.jpg" alt="">
           </div>
@@ -484,7 +489,7 @@
         <div class="col-sm-6">
           <div class="text-center bg-dark px-3 py-6 h-100">
             <h2 class="mb-3 display-6 text-white">Tem um Projeto?</h2>
-            <a class="btn text-white mb-0" href="#">Entre em contato</a>
+            <a class="btn text-white mb-0" routerLink="/contato">Entre em contato</a>
           </div>
         </div>
       </div><!-- row END -->
@@ -505,11 +510,11 @@
         <!-- Content and input -->
         <div class="col-sm-6">
           <p class="mt-3">Nos comprometemos a enviar notícias em um período minmo de uma semana.</p>
-          <form>
+          <form (ngSubmit)="submitNewsletter()">
             <div class="input-group">
-              <input class="form-control bg-white border-0" type="text" name="Newsletter"
-                placeholder="Insira o seu endereço de email">
-              <button type="button" class="btn btn-primary mb-0">Me increver</button>
+              <input class="form-control bg-white border-0" type="email" name="newsletterEmail"
+                placeholder="Insira o seu endereço de email" [(ngModel)]="email">
+              <button type="submit" class="btn btn-primary mb-0">Me increver</button>
             </div>
           </form>
         </div>
