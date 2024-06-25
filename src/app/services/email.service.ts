@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
 export class EmailService {
   sendEmail(to: string, subject: string, content: string): Promise<any> {
     let sgMail = new MailService();
-    sgMail.setApiKey(environment.sendgridApiKey);
+    sgMail.setApiKey(environment.envVar.SENDGRID_API_KEY);
     const msg = {
       to,
       from: 'noreply@funccloud.com',
