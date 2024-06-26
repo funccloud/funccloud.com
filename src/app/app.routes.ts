@@ -13,6 +13,7 @@ import { FinopsComponent } from './pages/finops/finops.component';
 import { BackupComponent } from './pages/backup/backup.component';
 import { DevopsComponent } from './pages/devops/devops.component';
 import { CaseStudiesComponent } from './pages/case-studies/case-studies.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export const routes: Routes = [
   {
@@ -84,5 +85,10 @@ export const routes: Routes = [
     path: 'cases-de-sucesso',
     component: CaseStudiesComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Cases de Sucesso'
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Página não encontrada'
   },
 ];
