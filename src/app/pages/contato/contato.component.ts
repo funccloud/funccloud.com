@@ -17,6 +17,10 @@ export class ContatoComponent {
   constructor(private emailService: EmailService) { }
 
   submitContato() {
+    if (!this.contatoForm.nome || !this.contatoForm.email || !this.contatoForm.telefone || !this.contatoForm.mensagem) {
+      alert('Por favor, preencha todos os campos do formulário de contato.');
+      return;
+    }
     const to = 'contato@funccloud.com';
     const subject = 'Formulário de Contato';
     const content = {
