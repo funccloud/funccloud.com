@@ -1,0 +1,127 @@
+<header [class]="floating() ? 'navbar-floating navbar-light navbar-sticky' : 'navbar-light navbar-sticky'">
+
+  <!-- Logo Nav START -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo START -->
+      <a class="navbar-brand" routerLink="/">
+        <img class="navbar-brand-item" src="assets/images/fc/logo.png" alt="Logo">
+      </a>
+      <!-- Logo END -->
+
+      <!-- Responsive navbar toggler -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+
+      <!-- Main Menu START -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar-nav-scroll mx-auto">
+          <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li class="nav-item dropdown dropdown-fullwidth">
+            <a [class]="solucoes() ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+              id="solucoesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soluções</a>
+            <div class="dropdown-menu" aria-labelledby="solucoesMenu">
+              <div class="container">
+                <div class="row g-0 flex-fill">
+                  <div class="col-sm-6 col-lg-6">
+                    <ul class="list-unstyled mb-4 mb-lg-0">
+                      <li class="dropdown-header"><a href="#"><img class="img-fluid"
+                            src="/assets/images/fc/i-produtividade.svg"><span class="ps-2">Produtividade e
+                            Colaboração</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/produtividade-colaboracao/google-workspace"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Google
+                            Workspace</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <ul class="list-unstyled mb-4 mb-lg-0">
+                      <li class="dropdown-header"><a href="#"><img class="img-fluid"
+                            src="/assets/images/fc/i-modernizacao.svg"><span class="ps-2">Cloud Services</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/posture-review"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Posture Review
+                            (Segurança &
+                            Compliance)</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/cloud-managed-services"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Cloud Managed Services
+                            (CMS)</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/suporte-monitoramento"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Suporte &
+                            Monitoramento</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/modernizacao-infra"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Modernização de Infra</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/data-analytics"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Data & Analytics</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/ia-ml" routerLinkActive="active"
+                          [routerLinkActiveOptions]="{exact: true}"><span class="badge text-bg-primary">IA &
+                            ML</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/migracao"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Migração</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/finops"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Finops</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/backup-dr"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Backup & DR</span></a></li>
+                      <li><a class="dropdown-item" routerLink="/solucoes/cloud-services/devops-sre"
+                          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span
+                            class="badge text-bg-primary">Devops & SRE</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="/cases-de-sucesso" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Casos de Sucesso</a></li>
+          <li class="nav-item dropdown dropdown-fullwidth">
+            <a [class]="institucional() ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'" href="#"
+              id="institucionalMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Institucional</a>
+            <div class="dropdown-menu" aria-labelledby="institucionalMenu">
+              <div class="container">
+                <div class="row g-0 flex-fill">
+                  <div class="col-sm-6 col-lg-6">
+                    <ul class="list-unstyled mb-4 mb-lg-0">
+                      <li class="dropdown-header"><a routerLink="/sobre-nos"><img class="img-fluid" width="55px"
+                            height="75px" src="/assets/images/fc/favicon.png"><span class="ps-2">Sobre
+                            Nós</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <ul class="list-unstyled mb-4 mb-lg-0">
+                      <li class="dropdown-header"><a routerLink="/certificacoes"><img class="img-fluid" width="55px"
+                            height="75px" src="/assets/images/fc/i-cert.svg"><span class="ps-2">Certificações</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="/contato" routerLinkActive="active">Contato</a></li>
+        </ul>
+      </div>
+      <!-- Main Menu END -->
+
+      <!-- Nav right START -->
+      <div class="d-none d-xl-block">
+        <ul class="list-unstyled d-flex justify-content-center h4 pt-2">
+          <li> <a routerLink="/contato" class="btn btn-primary">FALE COM UM ESPECIALISTA</a> </li>
+        </ul>
+      </div>
+      <!-- Nav right END -->
+    </div>
+  </nav>
+  <!-- Logo Nav END -->
+</header>

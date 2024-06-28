@@ -1,0 +1,17 @@
+<!-- =======================
+Cookies alert START -->
+<div [hidden]="accept"
+  class="alert alert-dismissible fade show bg-dark text-white position-fixed start-0 bottom-0 z-index-9 shadow rounded p-4 ms-3 mb-3 col-9 col-md-3"
+  role="alert">
+  <span>Este site usa cookies. Ao continuar a usar este site, você concorda com seu uso.</span>
+  <div class="mt-4">
+    <button type="button" (click)="acceptCookies()" class="btn btn-link btn-sm text-primary mb-0 ps-0"
+      data-bs-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">EU ACEITO</span>
+    </button>
+  </div>
+  <div class="position-absolute end-0 top-0 mt-n4 me-n4"><img class="w-100" src="assets/images/cookie.svg" alt="cookie">
+  </div>
+</div>
+<!-- =======================
+Cookies alert END -->

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-i-beneficios-docs">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="i-beneficios-docs" clip-path="url(#clip-i-beneficios-docs)">
+    <image id="NoPath_-_Copy_17_" data-name="NoPath - Copy (17)" width="62" height="62" transform="translate(1 1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAflBMVEVHcEw/n/8xivoqhvwng/wkhfwkgfUzf+U7kP8rh/sohfsmg/smg/wae/ANbds/f99Vqv8siPsmhPwnhf0YefACZto0jPoohPsZefAAZtohgPgnhPwnhfwlg/w3jvyhyv6z1P6y0/4kg/xBk/zo8v////+x0/5YoP10sP0igvyvMMlpAAAAGHRSTlMACDlZW1pNCh6k8f7++IcICaX////7OvIgPPEyAAAA4ElEQVR4Ae3SxYEDQQwAwUEzMzPmn+A9j7RufezFDqAGJJOtrPMhSoVa3ShqNFttuU631zfYYDhKajyZKoTZPBlYLBWCb78CFEJ4DbAQAUABARIYAIEBEBgAgQEQGACBARAA+CnUAfjfavGjSbcGgND4Z51AANSOFYDAeiO2VgLb3f5wFDrsd1sVcDpfrmKX8+kDADzhA5+Y5T2o9qDaAwDwE2/3EwEwxsfzUwA84QOfSFVABXwACHogiIDXA14EXEsLzGciYJtaYDgwYo3hvK2o1WyYhAYzHyIUvLMmU30BdPDAdWk8QEEAAAAASUVORK5CYII="/>
+  </g>
+</svg>
