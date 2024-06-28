@@ -509,14 +509,8 @@
         </div>
         <!-- Content and input -->
         <div class="col-sm-6">
-          <p class="mt-3">Nos comprometemos a enviar notícias em um período minmo de uma semana.</p>
-          <form (ngSubmit)="submitNewsletter()">
-            <div class="input-group">
-              <input class="form-control bg-white border-0" type="email" name="newsletterEmail"
-                placeholder="Insira o seu endereço de email" [(ngModel)]="email">
-              <button type="submit" class="btn btn-primary mb-0">Me increver</button>
-            </div>
-          </form>
+          <app-newsletter
+            label="Nos comprometemos a enviar notícias em um período minmo de uma semana."></app-newsletter>
         </div>
       </div><!-- row END -->
     </div>
