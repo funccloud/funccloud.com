@@ -12,7 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent implements AfterViewInit {
   floating = input(false);
   solucoes = input(false);
-  verticais = input(false);
+  institucional = input(false);
 
   ngAfterViewInit(): void {
     let stickyNav = document.querySelector('.navbar-sticky') as HTMLElement;

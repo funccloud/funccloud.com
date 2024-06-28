@@ -12,5 +12,5 @@ import { HeaderComponent } from '../../components/header/header.component';
 export class BaseComponent {
   floatingHeader = input(false);
   solucoes = input(false);
-  verticais = input(false);
+  institucional = input(false);
 }

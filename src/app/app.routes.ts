@@ -15,6 +15,8 @@ import { DevopsComponent } from './pages/devops/devops.component';
 import { CaseStudiesComponent } from './pages/case-studies/case-studies.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CaseSienaMigracaoComponent } from './pages/case-siena-migracao/case-siena-migracao.component';
+import { CertificacoesComponent } from './pages/certificacoes/certificacoes.component';
+import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 
 export const routes: Routes = [
   {
@@ -91,6 +93,16 @@ export const routes: Routes = [
     path: 'cases-de-sucesso/siena-migracao-google',
     component: CaseSienaMigracaoComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Cases de Sucesso - Siena Migracao Google'
+  },
+  {
+    path: 'certificacoes',
+    component: CertificacoesComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Certificações'
+  },
+  {
+    path: 'sobre-nos',
+    component: SobreNosComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Sobre Nós'
   },
   {
     path: '**',
