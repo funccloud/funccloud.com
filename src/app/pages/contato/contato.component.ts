@@ -5,11 +5,10 @@ import { EmailService } from '../../services/email.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-contato',
-  standalone: true,
-  imports: [BaseComponent, FormsModule],
-  templateUrl: './contato.component.html',
-  styleUrl: './contato.component.scss'
+    selector: 'app-contato',
+    imports: [BaseComponent, FormsModule],
+    templateUrl: './contato.component.html',
+    styleUrl: './contato.component.scss'
 })
 export class ContatoComponent {
   readonly email = 'contato@funccloud.com';

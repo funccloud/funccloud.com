@@ -3,11 +3,10 @@ import { BaseComponent } from '../base/base.component';
 import { CaseComponent } from '../../components/case/case.component';
 
 @Component({
-  selector: 'app-case-siena-migracao',
-  standalone: true,
-  imports: [BaseComponent, CaseComponent],
-  templateUrl: './case-siena-migracao.component.html',
-  styleUrl: './case-siena-migracao.component.scss'
+    selector: 'app-case-siena-migracao',
+    imports: [BaseComponent, CaseComponent],
+    templateUrl: './case-siena-migracao.component.html',
+    styleUrl: './case-siena-migracao.component.scss'
 })
 export class CaseSienaMigracaoComponent {
   readonly image = 'assets/images/fc/cases/siena.png';

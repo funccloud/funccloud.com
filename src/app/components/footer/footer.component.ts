@@ -8,11 +8,10 @@ import { NewsletterComponent } from '../newsletter/newsletter.component';
 
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [CookiesComponent, RouterLink, NewsletterComponent],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+    selector: 'app-footer',
+    imports: [CookiesComponent, RouterLink, NewsletterComponent],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.scss'
 })
 export class FooterComponent implements AfterViewInit {
 

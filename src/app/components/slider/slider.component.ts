@@ -3,11 +3,10 @@ import { tinySlider } from '../../utils/slider';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-slider',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './slider.component.html',
-  styleUrl: './slider.component.scss',
+    selector: 'app-slider',
+    imports: [RouterLink],
+    templateUrl: './slider.component.html',
+    styleUrl: './slider.component.scss'
 })
 export class SliderComponent implements AfterViewInit {
 

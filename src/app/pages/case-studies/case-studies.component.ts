@@ -3,11 +3,10 @@ import { BaseComponent } from '../base/base.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-case-studies',
-  standalone: true,
-  imports: [BaseComponent, RouterLink],
-  templateUrl: './case-studies.component.html',
-  styleUrl: './case-studies.component.scss'
+    selector: 'app-case-studies',
+    imports: [BaseComponent, RouterLink],
+    templateUrl: './case-studies.component.html',
+    styleUrl: './case-studies.component.scss'
 })
 export class CaseStudiesComponent {
 

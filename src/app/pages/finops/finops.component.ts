@@ -3,11 +3,10 @@ import { BaseComponent } from '../base/base.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-finops',
-  standalone: true,
-  imports: [BaseComponent, RouterLink],
-  templateUrl: './finops.component.html',
-  styleUrl: './finops.component.scss'
+    selector: 'app-finops',
+    imports: [BaseComponent, RouterLink],
+    templateUrl: './finops.component.html',
+    styleUrl: './finops.component.scss'
 })
 export class FinopsComponent {
 

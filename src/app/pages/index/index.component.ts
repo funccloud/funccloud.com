@@ -8,11 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { NewsletterComponent } from '../../components/newsletter/newsletter.component';
 
 @Component({
-  selector: 'app-index',
-  standalone: true,
-  imports: [BaseComponent, SliderComponent, TestimonialsComponent, RouterLink, NewsletterComponent],
-  templateUrl: './index.component.html',
-  styleUrl: './index.component.scss'
+    selector: 'app-index',
+    imports: [BaseComponent, SliderComponent, TestimonialsComponent, RouterLink, NewsletterComponent],
+    templateUrl: './index.component.html',
+    styleUrl: './index.component.scss'
 })
 export class IndexComponent {
 
