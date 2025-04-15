@@ -54,7 +54,7 @@ Um dos anúncios mais empolgantes foi o foco em **aplicações agentic**. O Goog
 O Google Cloud Next 2025 também trouxe diversas ferramentas focadas em aumentar a **produtividade dos desenvolvedores**, um aspecto crucial para a agilidade e inovação da sua empresa.
 
 *   O **Firebase Studio**, um novo ambiente de desenvolvimento baseado na nuvem, oferece tudo o que é necessário para criar rapidamente aplicativos full-stack de qualidade. A integração do **IDX** e os novos recursos de IA, como a geração de aplicativos por prompts e a assistência inteligente do Gemini, **aceleram o ciclo de desenvolvimento**.
-*   O **Gemini Code Assist** oferece **assistência inteligente para diversas tarefas de codificação**, como migrações, documentação e testes. A futura integração com um **Conbon Board** promete revolucionar a gestão do ciclo de vida do desenvolvimento de software.
+*   O **Gemini Code Assist** oferece **assistência inteligente para diversas tarefas de codificação**, como migrações, documentação e testes. A futura integração com um **Kanban Board** promete revolucionar a gestão do ciclo de vida do desenvolvimento de software.
 
 **Como podemos agregar valor:**
 
