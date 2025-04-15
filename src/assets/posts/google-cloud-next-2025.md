@@ -83,12 +83,12 @@ O Google Cloud continua investindo em **infraestrutura de ponta** para suportar 
 
 **Benefícios para o seu negócio:**
 
-*   Conte com uma **infraestrutura escalável, confiável e de alto desempenho** para suas aplicações e cargas de trabalho de IA.
+*   Conte com uma **infraestrutura escalável, confiável e de alto desempenho** para suas aplicações e workloads de IA.
 *   Aproveite a **Cloud WAN** para conectar suas operações globais de forma mais eficiente e econômica.
 
 **Como podemos ajudar:**
 
-*   Nossa equipe pode auxiliar na **migração e otimização** das suas cargas de trabalho para a infraestrutura do Google Cloud, garantindo o melhor desempenho e custo-benefício.
+*   Nossa equipe pode auxiliar na **migração e otimização** das suas workloads para a infraestrutura do Google Cloud, garantindo o melhor desempenho e custo-benefício.
 <br>
 
 ### Agentes em Todo Lugar com o Google Agent Space
