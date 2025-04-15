@@ -157,6 +157,15 @@ export class BlogService {
   }
 
   /**
+   * Fetches the 3 most recent posts based on the `date` field.
+   */
+  getRecentPosts(limit: number = 3): Observable<PostMetadata[]> {
+    return this.getPostsMetadata().pipe(
+      map(posts => posts.slice(0, limit)) // Take the top `limit` posts
+    );
+  }
+
+  /**
    * Busca o conteúdo Markdown (sem front matter) de um post específico.
    */
   getPostContent(slug: string): Observable<string> {

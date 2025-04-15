@@ -316,7 +316,52 @@
   <!-- =======================
   Service END -->
 
-  <app-testimonials></app-testimonials>
+  <!-- Últimos Posts Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="mb-4 display-6">Últimos <span class="text-dark-stroke">Posts</span></h2>
+          <p class="lead">Confira as últimas novidades do nosso blog.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center g-4 mt-0">
+        <ng-container *ngIf="latestPosts$ | async as posts; else loading">
+          <div *ngFor="let post of posts" class="col-md-6 col-lg-4 d-flex align-items-stretch">
+            <div class="card h-100 shadow-sm">
+              <div *ngIf="post.image" class="card-img-top">
+                <img [src]="post.image" [alt]="post.title" class="img-fluid rounded-top" />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title h5">{{ post.title }}</h2>
+                <p class="card-subtitle mb-2 text-muted small">
+                  Por {{ post.author }} em {{ post.date | date }}
+                </p>
+                <p class="card-text flex-grow-1">{{ post.excerpt }}</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span *ngFor="let tag of post.tags" class="badge bg-primary lead">{{ tag }}</span>
+                </div>
+                <div class="mt-3">
+                  <a [routerLink]="['/blog', post.slug]" class="btn btn-primary">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+        <ng-template #loading>
+          <div class="d-flex justify-content-center mt-5">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Carregando posts...</span>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-light">
+    <app-testimonials></app-testimonials>
+  </div>
 
   <!-- =======================
   Clients START -->
