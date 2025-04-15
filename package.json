@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "start": "node scripts/generate-post-slugs.js && ng serve",
+    "build": "node scripts/generate-post-slugs.js && ng build",
+    "watch": "node scripts/generate-post-slugs.js && ng build --watch --configuration development",
+    "test": "node scripts/generate-post-slugs.js && ng test",
     "serve:ssr:funccloud.com": "node dist/funccloud.com/server/server.mjs"
   },
   "private": true,
@@ -21,6 +21,8 @@
     "@angular/router": "^19.2.6",
     "@netlify/emails": "^1.1.0",
     "ng-process-env": "^16.0.6",
+    "ngx-markdown": "^19.1.1",
+    "prismjs": "^1.30.0",
     "rxjs": "~7.8.0",
     "tiny-slider": "^2.9.4",
     "tslib": "^2.3.0",

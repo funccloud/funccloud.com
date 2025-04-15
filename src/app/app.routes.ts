@@ -17,6 +17,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CaseSienaMigracaoComponent } from './pages/case-siena-migracao/case-siena-migracao.component';
 import { CertificacoesComponent } from './pages/certificacoes/certificacoes.component';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
+import { BlogListComponent } from './pages/blog-list/blog-list.component';
+import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 
 export const routes: Routes = [
   {
@@ -103,6 +105,15 @@ export const routes: Routes = [
     path: 'sobre-nos',
     component: SobreNosComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Sobre Nós'
+  },
+  {
+    path: 'blog',
+    component: BlogListComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Blog'
+  },
+  {
+    path: 'blog/:slug',
+    component: BlogPostComponent,
   },
   {
     path: '**',

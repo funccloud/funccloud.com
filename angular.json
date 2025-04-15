@@ -33,6 +33,7 @@
               "src/assets/vendor/glightbox/css/glightbox.css",
               "src/assets/vendor/aos/aos.css",
               "./node_modules/tiny-slider/src/tiny-slider.scss",
+              "node_modules/prismjs/themes/prism.css",
               "src/assets/scss/style.scss"
             ],
             "scripts": [
@@ -42,7 +43,9 @@
               "src/assets/vendor/aos/aos.js",
               "src/assets/vendor/ityped/index.js",
               "src/assets/vendor/jarallax/jarallax.min.js",
-              "src/assets/js/functions.js"
+              "src/assets/js/functions.js",
+              "node_modules/prismjs/prism.js"
+
             ],
             "allowedCommonJsDependencies": [
               "@sendgrid/mail"

@@ -1,5 +1,5 @@
 [build]
-command = "ng run funccloud.com:collect-vars && ng build --configuration production"
+command = "ng run funccloud.com:collect-vars && node scripts/generate-post-slugs.js && ng build --configuration production"
 publish = "dist/funccloud.com/browser"
 [[plugins]]
 package = "@netlify/plugin-emails"
