@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI: Desvendando o Potencial da Inteligência Autônoma para Empresas"
-date: 2025-04-22
+date: 2025-04-23
 author: Felipe Oliveira
 excerpt: O que exatamente é a Agentic AI e como ela pode revolucionar os negócios?.
 image: assets/images/blog/ia.jpg
