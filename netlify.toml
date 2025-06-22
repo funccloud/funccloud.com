@@ -1,9 +1,4 @@
 [build]
-command = "ng run funccloud.com:collect-vars && ng build --configuration production"
+command = "ng build"
+functions = "netlify/functions"
 publish = "dist/funccloud.com/browser"
-[[plugins]]
-package = "@netlify/plugin-emails"
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200

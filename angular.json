@@ -15,51 +15,38 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/funccloud.com",
-            "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
-              "src/assets/vendor/font-awesome/css/all.min.css",
-              "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
-              "src/assets/vendor/animate/animate.min.css",
-              "src/assets/vendor/glightbox/css/glightbox.css",
-              "src/assets/vendor/aos/aos.css",
-              "./node_modules/tiny-slider/src/tiny-slider.scss",
-              "src/assets/scss/style.scss"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "src/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/vendor/glightbox/js/glightbox.js",
-              "src/assets/vendor/purecounterjs/dist/purecounter_vanilla.js",
-              "src/assets/vendor/aos/aos.js",
-              "src/assets/vendor/ityped/index.js",
-              "src/assets/vendor/jarallax/jarallax.min.js",
-              "src/assets/js/functions.js"
-            ],
-            "allowedCommonJsDependencies": [
-              "@sendgrid/mail"
-            ]
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "10mb",
-                  "maximumError": "10mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "4mb"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -67,19 +54,13 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "funccloud.com:build:production"
@@ -91,34 +72,22 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "funccloud.com:build"
-          }
+          "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "scripts": []
-          }
-        },
-        "collect-vars": {
-          "builder": "ng-process-env:collectVars",
-          "options": {
-            "environmentFile": "src/environments/environment.ts"
+            ]
           }
         }
       }
