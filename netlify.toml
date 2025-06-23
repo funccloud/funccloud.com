@@ -2,7 +2,5 @@
 command = "ng build"
 ignore = "exit 1"
 publish = "dist/funccloud.com/browser"
-[[plugins]]
-package = "@netlify/plugin-emails"
-[[plugins]]
-package = "@netlify/angular-runtime"
+[build.environment]
+NODE_VERSION = "20.19.0"
