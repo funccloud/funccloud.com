@@ -1,4 +1,7 @@
 [build]
 command = "ng build"
-functions = "netlify/functions"
 publish = "dist/funccloud.com/browser"
+[[plugins]]
+package = "@netlify/plugin-emails"
+[[plugins]]
+package = "@netlify/angular-runtime"
