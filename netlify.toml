@@ -1,6 +1,5 @@
 [build]
 command = "ng build"
-ignore = "exit 1"
 publish = "dist/funccloud.com/browser"
 [build.environment]
 NODE_VERSION = "20.19.0"
