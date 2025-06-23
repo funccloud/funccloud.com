@@ -1,0 +1,25 @@
+<div class="container" style="padding-top: 20px;">
+  <div *ngIf="post$ | async as post; else loadingOrError">
+    <article class="blog-post-content">
+      <h1>{{ post.title }}</h1>
+      <p *ngIf="post.date" class="post-date">Publicado em: {{ post.date | date:'dd/MM/yyyy' }}</p>
+      <hr>
+      <div [innerHTML]="postContent"></div>
+    </article>
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+      <a routerLink="/blog" class="btn">&larr; Voltar para o Blog</a>
+    </div>
+  </div>
+
+  <ng-template #loadingOrError>
+    <!-- Verifica se há um slug para diferenciar entre carregando e não encontrado inicialmente -->
+    <div *ngIf="slug; else preLoading">
+      <p style="text-align: center;">Carregando post...</p>
+      <!-- Poderia adicionar uma mensagem de erro específica se o post não for encontrado após a tentativa de carregamento -->
+    </div>
+    <ng-template #preLoading>
+       <!-- Este estado pode não ser visível se o redirecionamento para 404 for rápido -->
+      <p style="text-align: center;">Iniciando...</p>
+    </ng-template>
+  </ng-template>
+</div>
