@@ -1,0 +1,24 @@
+<div class="container" style="padding-top: 20px;">
+  <h1 class="text-primary" style="text-align: center; margin-bottom: 30px;">Nosso Blog</h1>
+  <p class="lead" style="text-align: center; margin-bottom: 40px;">
+    Acompanhe nossos insights, novidades e artigos sobre o universo da computação em nuvem, desenvolvimento e tecnologia.
+  </p>
+
+  <div *ngIf="posts$ | async as posts; else loading">
+    <ul class="blog-list" *ngIf="posts.length > 0; else noPosts">
+      <li *ngFor="let post of posts">
+        <a [routerLink]="['/blog', post.slug]">
+          <h2>{{ post.title }}</h2>
+          <p *ngIf="post.date" class="post-date">Publicado em: {{ post.date | date:'dd/MM/yyyy' }}</p>
+          <p *ngIf="post.excerpt">{{ post.excerpt }}</p>
+        </a>
+      </li>
+    </ul>
+    <ng-template #noPosts>
+      <p style="text-align: center;">Nenhuma postagem encontrada.</p>
+    </ng-template>
+  </div>
+  <ng-template #loading>
+    <p style="text-align: center;">Carregando posts...</p>
+  </ng-template>
+</div>

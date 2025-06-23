@@ -1,0 +1,8 @@
+Placeholder for showcase image.
+This is a placeholder file for public/assets/showcase.jpg.
+In a real scenario, this would be a relevant image for the website's hero section.
+For now, it's just a text file to ensure the build process doesn't break due to a missing asset
+referenced in src/styles.scss.
+The styles.scss file references './assets/showcase.jpg'.
+Creating this placeholder prevents a 404 error for this asset during development or build.
+The actual image should be added here later.
