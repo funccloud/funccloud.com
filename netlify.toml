@@ -1,7 +1,5 @@
 [build]
 command = "ng build"
 publish = "dist/funccloud.com/browser"
-[[plugins]]
-package = "@netlify/angular-runtime"
 [build.environment]
 NODE_VERSION = "20.19.0"
