@@ -1,5 +1,6 @@
 [build]
 command = "ng build"
+ignore = "exit 1"
 publish = "dist/funccloud.com/browser"
 [[plugins]]
 package = "@netlify/plugin-emails"
