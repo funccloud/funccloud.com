@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FinopsComponent } from './finops.component';
+import { SapComponent } from './sap.component';
 
-describe('FinopsComponent', () => {
-  let component: FinopsComponent;
-  let fixture: ComponentFixture<FinopsComponent>;
+describe('SapComponent', () => {
+  let component: SapComponent;
+  let fixture: ComponentFixture<SapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FinopsComponent]
-    })
-    .compileComponents();
+      imports: [SapComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(FinopsComponent);
+    fixture = TestBed.createComponent(SapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
