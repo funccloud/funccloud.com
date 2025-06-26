@@ -8,4 +8,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './sap.component.html',
   styleUrl: './sap.component.scss',
 })
-export class FinopsComponent {}
+export class SapComponent {}
