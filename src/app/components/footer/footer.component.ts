@@ -1,28 +1,29 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CookiesComponent } from '../cookies/cookies.component';
 import { FormsModule } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
 import { RouterLink } from '@angular/router';
 import { NewsletterComponent } from '../newsletter/newsletter.component';
 
-
-
 @Component({
-    selector: 'app-footer',
-    imports: [CookiesComponent, RouterLink, NewsletterComponent],
-    templateUrl: './footer.component.html',
-    styleUrl: './footer.component.scss'
+  selector: 'app-footer',
+  standalone: true,
+  imports: [CookiesComponent, RouterLink, NewsletterComponent],
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent implements AfterViewInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   customCursor() {
-    let c = document.querySelector(".cursor-dot") as HTMLElement;
+    let c = document.querySelector('.cursor-dot') as HTMLElement;
     let cursor = {
       delay: 8,
       _x: 0,
       _y: 0,
-      endX: (window.innerWidth / 2),
-      endY: (window.innerHeight / 2),
+      endX: window.innerWidth / 2,
+      endY: window.innerHeight / 2,
       cursorVisible: true,
       cursorEnlarged: false,
       $dot: document.querySelector('.cursor-dot') as HTMLElement,
@@ -42,7 +43,7 @@ export class FooterComponent implements AfterViewInit {
       updateCursor: function (e: MouseEvent) {
         let self = this;
 
-        console.log(e)
+        console.log(e);
 
         // Show the cursor
         self.cursorVisible = true;
@@ -85,7 +86,6 @@ export class FooterComponent implements AfterViewInit {
           self.cursorEnlarged = false;
           self.toggleCursorSize();
         });
-
 
         document.addEventListener('mousemove', function (e) {
           // Show the cursor
@@ -148,37 +148,55 @@ export class FooterComponent implements AfterViewInit {
           self.$dot.style.opacity = '0';
           self.$outline.style.opacity = '0';
         }
-      }
+      },
+    };
+    if (isPlatformBrowser(this.platformId)) {
+      cursor.init();
     }
-    cursor.init();
   }
 
   ngAfterViewInit(): void {
-    let fixedFooter = document.querySelector('.footer-sticky') as HTMLElement;
-    window.addEventListener('resize', function () {
-      let screenWidth = window.outerWidth;
-      let footerHeight = fixedFooter.offsetHeight - 1;
-      if (screenWidth >= 768) {
-        document.getElementsByTagName('main')[0].style.marginBottom = footerHeight + 'px';
+    if (isPlatformBrowser(this.platformId)) {
+      const fixedFooter = document.querySelector(
+        '.footer-sticky'
+      ) as HTMLElement;
+      if (fixedFooter) {
+        window.addEventListener('resize', () => {
+          const screenWidth = window.outerWidth;
+          const footerHeight = fixedFooter.offsetHeight - 1;
+          if (screenWidth >= 768) {
+            const mainElement = document.getElementsByTagName('main')[0];
+            if (mainElement) {
+              mainElement.style.marginBottom = footerHeight + 'px';
+            }
+          }
+        });
+        window.dispatchEvent(new Event('resize'));
       }
-    })
-    window.dispatchEvent(new Event('resize'));
-    let scrollpos = window.scrollY;
-    let backBtn = document.querySelector('.back-top') as HTMLElement;
-    let add_class_on_scroll = () => backBtn.classList.add('back-top-show');
-    let remove_class_on_scroll = () => backBtn.classList.remove('back-top-show');
-    window.addEventListener('scroll', () => {
-      scrollpos = window.scrollY;
-      if (scrollpos >= 300) {
-        add_class_on_scroll();
-      } else {
-        remove_class_on_scroll();
+
+      const backBtn = document.querySelector('.back-top') as HTMLElement;
+      if (backBtn) {
+        const add_class_on_scroll = () =>
+          backBtn.classList.add('back-top-show');
+        const remove_class_on_scroll = () =>
+          backBtn.classList.remove('back-top-show');
+        window.addEventListener('scroll', () => {
+          const scrollpos = window.scrollY;
+          if (scrollpos >= 300) {
+            add_class_on_scroll();
+          } else {
+            remove_class_on_scroll();
+          }
+        });
+        backBtn.addEventListener('click', () =>
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          })
+        );
       }
-    });
-    backBtn.addEventListener('click', () => window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    }));
-    this.customCursor()
+
+      this.customCursor();
+    }
   }
 }

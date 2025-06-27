@@ -45,11 +45,15 @@
               "src/assets/vendor/jarallax/jarallax.min.js",
               "src/assets/js/functions.js",
               "node_modules/prismjs/prism.js"
-
             ],
             "allowedCommonJsDependencies": [
               "@sendgrid/mail"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {

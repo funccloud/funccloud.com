@@ -1,8 +1,16 @@
-import { ApplicationConfig, LOCALE_ID, provideZonelessChangeDetection, importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
 import { provideHttpClient, withFetch } from '@angular/common/http'; // Importar withFetch
-import { provideMarkdown } from 'ngx-markdown'; // Importar provideMarkdown
+import {
+  ApplicationConfig,
+  LOCALE_ID,
+  provideZonelessChangeDetection,
+} from '@angular/core';
+import {
+  provideClientHydration,
+  withIncrementalHydration,
+} from '@angular/platform-browser'; // Importar provideMarkdown
+import { provideRouter } from '@angular/router';
+import { provideMarkdown } from 'ngx-markdown';
+import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -10,6 +18,7 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideHttpClient(withFetch()), // Habilitar fetch API para HttpClient
-    provideMarkdown(), // Adicionar o provider do ngx-markdown
-  ]
+    provideMarkdown(),
+    provideClientHydration(withIncrementalHydration()),
+  ],
 };
