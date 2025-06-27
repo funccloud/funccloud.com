@@ -2,6 +2,9 @@
 command = "ng run funccloud.com:collect-vars && node scripts/generate-post-slugs.js && ng build --configuration production"
 publish = "dist/funccloud.com/browser"
 
+[build.environment]
+NODE_VERSION = "20.19.0"
+
 [[plugins]]
 package = "@netlify/plugin-emails"
 
