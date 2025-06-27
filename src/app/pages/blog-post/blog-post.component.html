@@ -1,9 +1,9 @@
 <app-base>
   <div class="bg-light">
     <!-- Assina o postData$ -->
-    <ng-container *ngIf="postData$ | async as postData; else loadingOrErrorTemplate">
+    @if (postData$ | async; as postData) {
       <!-- Verifica se postData não é null (sucesso) -->
-      <ng-container *ngIf="postData; else notFoundTemplate">
+      @if (postData) {
         <!-- Header Section -->
         <section class="bg-parallax bg-dark-overlay-4 py-5 py-md-8"
           style="background: url({{postData.metadata.image}}) no-repeat center center; background-size: cover;">
@@ -14,49 +14,47 @@
                 <p class="text-white">Por {{ postData.metadata.author }} em {{ postData.metadata.date | date }}</p>
                 <p class="text-muted">
                   <span class="d-flex flex-wrap gap-1 justify-content-center">
-                    <span *ngFor="let tag of postData.metadata.tags" class="badge bg-primary lead">{{ tag }}</span>
+                    @for (tag of postData.metadata.tags; track tag) {
+                      <span class="badge bg-primary lead">{{ tag }}</span>
+                    }
                   </span>
                 </p>
               </div>
             </div>
           </div>
         </section>
-
         <div class="container py-5">
           <div class="lead">
             <markdown [data]="postData.content"></markdown>
           </div>
           <a routerLink="/blog" class="mt-5"><i class="bi bi-arrow-left me-2"></i>Voltar para o Blog</a>
         </div>
-      </ng-container>
-    </ng-container>
-
-    <ng-template #loadingOrErrorTemplate>
+      } @else {
+        <div class="alert alert-warning" role="alert">
+          Post não encontrado.
+          <a routerLink="/blog" class="alert-link">Voltar para o Blog</a>.
+        </div>
+      }
+    } @else {
       <!-- Verifica se o valor emitido foi null (erro) -->
-      <ng-container *ngIf="(postData$ | async) === null; else loadingTemplate">
+      @if ((postData$ | async) === null) {
         <!-- Template de erro/não encontrado -->
         <div class="alert alert-warning" role="alert">
           Post não encontrado ou ocorreu um erro ao carregar.
           <a routerLink="/blog" class="alert-link">Voltar para o Blog</a>.
         </div>
-      </ng-container>
-    </ng-template>
+      } @else {
+        <div class="d-flex justify-content-center mt-5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando post...</span>
+          </div>
+        </div>
+      }
+    }
+
 
     <!-- Template de carregamento -->
-    <ng-template #loadingTemplate>
-      <div class="d-flex justify-content-center mt-5">
-        <div class="spinner-border text-primary" role="status">
-          <span class="visually-hidden">Carregando post...</span>
-        </div>
-      </div>
-    </ng-template>
 
     <!-- Template específico para caso postData seja null (opcional, pode ser combinado com o de erro) -->
-    <ng-template #notFoundTemplate>
-      <div class="alert alert-warning" role="alert">
-        Post não encontrado.
-        <a routerLink="/blog" class="alert-link">Voltar para o Blog</a>.
-      </div>
-    </ng-template>
   </div>
 </app-base>
