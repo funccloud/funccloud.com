@@ -20,6 +20,8 @@ import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { SapComponent } from './pages/sap/sap.component';
+import { AlocacaoTiComponent } from './pages/alocacao-ti/alocacao-ti.component';
+import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +38,12 @@ export const routes: Routes = [
     path: 'solucoes/produtividade-colaboracao/google-workspace',
     component: GwsComponent,
     title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Google Workspace',
+  },
+  {
+    path: 'solucoes/produtividade-colaboracao/alocacao-ti',
+    component: AlocacaoTiComponent,
+    title:
+      'FuncCloud - Facilitamos a Inovação na Nuvem | Alocação de Profissionais de TI',
   },
   {
     path: 'solucoes/cloud-services/posture-review',
@@ -126,6 +134,13 @@ export const routes: Routes = [
   {
     path: 'blog/:slug',
     component: BlogPostComponent,
+    title: 'FuncCloud - Facilitamos a Inovação na Nuvem | Blog',
+  },
+  {
+    path: 'politica-privacidade',
+    component: PoliticaPrivacidadeComponent,
+    title:
+      'FuncCloud - Facilitamos a Inovação na Nuvem | Política de Privacidade',
   },
   {
     path: '**',
