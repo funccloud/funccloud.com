@@ -6,7 +6,7 @@ publish = "dist/funccloud.com/browser"
 NODE_VERSION = "20.19.0"
 
 [[plugins]]
-package = "@netlify/plugin-emails"
+package = "@netlify/plugin-functions-install-core"
 
 [[plugins]]
 package = "@netlify/angular-runtime"

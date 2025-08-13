@@ -4,21 +4,28 @@ import { environment } from '../../environments/environment';
 import { lastValueFrom } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmailService {
-  constructor(private http: HttpClient) { }
-  sendEmail(to: string, subject: string, template: string, content: Record<string, unknown>): Promise<any> {
-    let body = JSON.stringify({
-      from: "FuncCloud <noreply@funccloud.com>",
+  constructor(private http: HttpClient) {}
+  sendEmail(
+    to: string,
+    subject: string,
+    template: string,
+    content: Record<string, unknown>
+  ): Promise<any> {
+    const htmlContent = Object.entries(content)
+      .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
+      .join('');
+
+    const body = JSON.stringify({
+      from: 'FuncCloud <noreply@funccloud.com>',
       to: to,
       subject: subject,
-      parameters: content,
+      html: htmlContent,
     });
-    return lastValueFrom(this.http.post(`/.netlify/functions/emails/${template}`, body, {
-      headers: {
-        "netlify-emails-secret": environment.envVar.NETLIFY_EMAILS_SECRET
-      }
-    }));
+    return lastValueFrom(
+      this.http.post('/.netlify/functions/sendgrid-sender', body)
+    );
   }
 }
