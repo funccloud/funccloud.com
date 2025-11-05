@@ -7,12 +7,7 @@ import { NewsletterComponent } from '../newsletter/newsletter.component';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [
-    CookiesComponent,
-    RouterLink,
-    RouterLinkActive,
-    NewsletterComponent,
-  ],
+  imports: [CookiesComponent, RouterLink, NewsletterComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
